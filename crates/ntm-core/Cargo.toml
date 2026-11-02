@@ -1,0 +1,7 @@
+[package]
+name = "ntm-core"
+version = "0.1.0"
+edition = "2024"
+license = "LGPL-3.0-only"
+publish = false
+description = "NTM game logic with no Horizon dependency"

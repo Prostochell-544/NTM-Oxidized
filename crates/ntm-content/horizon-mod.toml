@@ -1,0 +1,8 @@
+id = "ntm"
+name = "HBM's Nuclear Tech"
+version = "0.1.0"
+description = "Port of HBM's Nuclear Tech Mod to Horizon"
+authors = []
+api = "0.2"
+side = "both"
+capabilities = ["registries"]

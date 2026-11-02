@@ -1,0 +1,13 @@
+[package]
+name = "ntm-api-engine"
+version = "0.1.0"
+edition = "2024"
+license = "LGPL-3.0-only"
+publish = false
+
+[dependencies]
+# The launcher points this at the source it builds on.
+horizon-client = { path = "../../crates/horizon-client" }
+log = "0.4"
+# Copied beside this file by assemble.py: a bundle can't reach outside its folder.
+ntm-core = { path = "ntm_core" }

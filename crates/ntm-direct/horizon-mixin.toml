@@ -1,0 +1,19 @@
+[mod]
+id = "ntm_direct"
+version = "0.1.0"
+
+[compatibility]
+horizon_revision = "31f83499b6c2cff7a8e7bf45f8173a7a95c2767c"
+
+# Copied into the bundle by assemble.py: a bundle can't reach outside its folder.
+[[crate]]
+id = "ntm_core"
+path = "ntm_core"
+
+[[injection]]
+id = "server_tick"
+hook = "server_tick"
+hook_version = 1
+kind = "HEAD"
+helper = "server_tick.rs"
+bindings = []
