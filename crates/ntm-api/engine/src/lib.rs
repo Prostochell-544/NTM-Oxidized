@@ -6,10 +6,11 @@ use horizon_client::mod_api::{
     BlockEntityTickEvent, BlockEntityTicksEvent, ChunkLoadEvent, ChunkUnloadEvent, Compound,
     Flow, Holder, Hooks, Host, ItemStack, LevelTickPreEvent, MenuSlotRulesEvent, ModBlockEntity,
     ModContainer, NativeScreen, ScreenDrawEvent, ScreenEvent, ScreenTooltipEvent,
-    ServerTickEvent, Tag, Text, UseItemOnEvent, WorldLifecycleEvent, WorldPhase,
+    ServerDataLoadedEvent, ServerTickEvent, Tag, Text, UseItemOnEvent, WorldLifecycleEvent,
+    WorldPhase,
 };
 use ntm_core::energy::{EnergyHandlers, NodeId, Nodespace, Pos, Port, around};
-use ntm_core::machine::{FuelKind, Shredder, ShredderRules, WoodBurner};
+use ntm_core::machine::{FuelKind, RecipeCache, Shredder, ShredderRules, WoodBurner};
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::sync::{Mutex, Once};
@@ -84,12 +85,21 @@ impl Level {
 #[derive(Default)]
 struct NtmHooks {
     levels: Mutex<HashMap<String, Level>>,
+    shredder_results: Mutex<RecipeCache<ItemStack>>,
 }
 
 impl NtmHooks {
     fn with_level<R>(&self, dimension: &str, f: impl FnOnce(&mut Level) -> R) -> R {
         let mut levels = self.levels.lock().unwrap_or_else(|e| e.into_inner());
         f(levels.entry(dimension.to_owned()).or_default())
+    }
+
+    /// The recipes and tags were (re)built: what was found in them is stale.
+    fn forget_recipes(&self) {
+        self.shredder_results
+            .lock()
+            .unwrap_or_else(|e| e.into_inner())
+            .clear();
     }
 }
 
@@ -228,7 +238,7 @@ fn tick_wood_burner(host: &mut dyn Host, pos: Pos, entity: &mut ModBlockEntity) 
     entity.data = vec![burner.burn_time, burner.max_burn_time, 0, 0];
 }
 
-struct Rules<'a>(&'a dyn Host);
+struct Rules<'a>(&'a dyn Host, &'a Mutex<RecipeCache<ItemStack>>);
 
 impl ShredderRules<ItemStack> for Rules<'_> {
     fn same_item(&self, a: &ItemStack, b: &ItemStack) -> bool {
@@ -263,23 +273,31 @@ impl ShredderRules<ItemStack> for Rules<'_> {
 
     fn result(&self, stack: &ItemStack) -> Option<ItemStack> {
         let host = self.0;
-        host.recipes_of_type(SHREDDER_RECIPE)
-            .iter()
-            .find(|recipe| {
-                host.recipe_ingredient(&recipe.json["ingredient"])
-                    .is_some_and(|ingredient| ingredient.test(stack))
-            })
-            .and_then(|recipe| host.recipe_result(&recipe.json["result"]))
-            .or_else(|| host.recipe_result(&serde_json::json!({ "id": SCRAP })))
+        let mut results = self.1.lock().unwrap_or_else(|e| e.into_inner());
+        results.get(&stack.item, || {
+            host.recipes_of_type(SHREDDER_RECIPE)
+                .iter()
+                .find(|recipe| {
+                    host.recipe_ingredient(&recipe.json["ingredient"])
+                        .is_some_and(|ingredient| ingredient.test(stack))
+                })
+                .and_then(|recipe| host.recipe_result(&recipe.json["result"]))
+                .or_else(|| host.recipe_result(&serde_json::json!({ "id": SCRAP })))
+        })
     }
 }
 
-fn tick_shredder(host: &mut dyn Host, pos: Pos, entity: &mut ModBlockEntity) {
+fn tick_shredder(
+    host: &mut dyn Host,
+    pos: Pos,
+    entity: &mut ModBlockEntity,
+    results: &Mutex<RecipeCache<ItemStack>>,
+) {
     let mut shredder = Shredder {
         power: power(host, pos),
         progress: int(&entity.nbt, "progress"),
     };
-    let rules = Rules(&*host);
+    let rules = Rules(&*host, results);
     shredder.tick(&rules, &mut entity.items);
     let left = Shredder::gear(&rules, entity.items[Shredder::LEFT_BLADE].as_ref());
     let right = Shredder::gear(&rules, entity.items[Shredder::RIGHT_BLADE].as_ref());
@@ -327,7 +345,12 @@ impl Hooks for NtmHooks {
                 .lock()
                 .unwrap_or_else(|e| e.into_inner())
                 .clear();
+            self.forget_recipes();
         }
+    }
+
+    fn server_data_loaded(&self, _host: &mut dyn Host, _event: &mut ServerDataLoadedEvent) {
+        self.forget_recipes();
     }
 
     fn chunk_load(&self, _host: &mut dyn Host, event: &mut ChunkLoadEvent<'_>) {
@@ -425,7 +448,7 @@ impl Hooks for NtmHooks {
             if id == WOOD_BURNER {
                 tick_wood_burner(host, pos, event.entity);
             } else {
-                tick_shredder(host, pos, event.entity);
+                tick_shredder(host, pos, event.entity, &self.shredder_results);
             }
         }
     }

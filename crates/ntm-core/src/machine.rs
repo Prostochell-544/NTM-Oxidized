@@ -51,6 +51,35 @@ impl WoodBurner {
     }
 }
 
+/// Recipe results by input item, as NTM's machines keep their recipes in maps keyed by the input:
+/// a lookup is found once, then answered from here until the data reloads and `clear` empties it.
+#[derive(Clone, Debug)]
+pub struct RecipeCache<S> {
+    results: std::collections::HashMap<String, Option<S>>,
+}
+
+impl<S> Default for RecipeCache<S> {
+    fn default() -> Self {
+        Self { results: std::collections::HashMap::new() }
+    }
+}
+
+impl<S: Clone> RecipeCache<S> {
+    /// The result for `item`, found with `find` the first time it is asked.
+    pub fn get(&mut self, item: &str, find: impl FnOnce() -> Option<S>) -> Option<S> {
+        if let Some(result) = self.results.get(item) {
+            return result.clone();
+        }
+        let result = find();
+        self.results.insert(item.to_owned(), result.clone());
+        result
+    }
+
+    pub fn clear(&mut self) {
+        self.results.clear();
+    }
+}
+
 /// How the shredder sees the stacks of its slots, whatever they are.
 pub trait ShredderRules<S> {
     fn same_item(&self, a: &S, b: &S) -> bool;

@@ -41,6 +41,14 @@ helper = "world_lifecycle.rs"
 bindings = [{ name = "phase", ty = "WorldPhase", value = "phase" }]
 
 [[injection]]
+id = "server_data_loaded"
+hook = "server_data_loaded"
+hook_version = 1
+kind = "HEAD"
+helper = "server_data_loaded.rs"
+bindings = []
+
+[[injection]]
 id = "chunk_load"
 hook = "chunk_load"
 hook_version = 1

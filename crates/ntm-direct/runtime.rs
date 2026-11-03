@@ -8,7 +8,7 @@ use horizon_client_render::chunk::block_entity::{ModBlockEntity, ModContainer};
 use horizon_world::nbt::{Compound, Tag};
 use ntm_core::energy::{EnergyHandlers, NodeId, Nodespace, Pos, Port, around};
 use crate::mod_api::{HudBatch, NativeScreen};
-use ntm_core::machine::{FuelKind, Shredder, ShredderRules, WoodBurner};
+use ntm_core::machine::{FuelKind, RecipeCache, Shredder, ShredderRules, WoodBurner};
 use std::collections::{HashMap, HashSet};
 use std::sync::Mutex;
 
@@ -61,6 +61,7 @@ impl Level {
 }
 
 static LEVELS: Mutex<Option<HashMap<String, Level>>> = Mutex::new(None);
+static SHREDDER_RESULTS: Mutex<Option<RecipeCache<ItemStack>>> = Mutex::new(None);
 
 fn with_level<R>(dimension: &str, f: impl FnOnce(&mut Level) -> R) -> R {
     let mut levels = LEVELS.lock().unwrap_or_else(|e| e.into_inner());
@@ -144,6 +145,12 @@ pub(super) fn level_tick(game: &mut Game<'_>, dimension: &str) {
 
 pub(super) fn world_closed() {
     *LEVELS.lock().unwrap_or_else(|e| e.into_inner()) = None;
+    data_loaded();
+}
+
+/// The recipes and tags were (re)built: what was found in them is stale.
+pub(super) fn data_loaded() {
+    *SHREDDER_RESULTS.lock().unwrap_or_else(|e| e.into_inner()) = None;
 }
 
 pub(super) fn chunk_loaded(dimension: &str, chunk: [i32; 2]) {
@@ -322,15 +329,18 @@ impl ShredderRules<ItemStack> for Rules<'_, '_> {
 
     fn result(&self, stack: &ItemStack) -> Option<ItemStack> {
         let game = self.0;
-        let recipe = game
-            .native_recipes_of_type(SHREDDER_RECIPE)
-            .iter()
-            .find(|recipe| {
-                game.native_recipe_ingredient(&recipe.json["ingredient"])
-                    .is_some_and(|ingredient| ingredient.test(stack))
-            })
-            .and_then(|recipe| game.native_recipe_result(&recipe.json["result"]));
-        recipe.or_else(|| game.native_recipe_result(&serde_json::json!({ "id": SCRAP })))
+        let mut results = SHREDDER_RESULTS.lock().unwrap_or_else(|e| e.into_inner());
+        results.get_or_insert_with(RecipeCache::default).get(&stack.item, || {
+            let recipe = game
+                .native_recipes_of_type(SHREDDER_RECIPE)
+                .iter()
+                .find(|recipe| {
+                    game.native_recipe_ingredient(&recipe.json["ingredient"])
+                        .is_some_and(|ingredient| ingredient.test(stack))
+                })
+                .and_then(|recipe| game.native_recipe_result(&recipe.json["result"]));
+            recipe.or_else(|| game.native_recipe_result(&serde_json::json!({ "id": SCRAP })))
+        })
     }
 }
 
