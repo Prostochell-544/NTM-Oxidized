@@ -1,0 +1,10 @@
+{
+  "title": "itemGroup.ntm.machines",
+  "icon": "ntm:machine_shredder",
+  "items": [
+    "ntm:red_cable",
+    "ntm:machine_wood_burner",
+    "ntm:machine_shredder",
+    "ntm:power_net_tool"
+  ]
+}

@@ -364,6 +364,13 @@ impl<H: Copy + Ord> Nodespace<H> {
         self.nets.get(&net).map(|n| n.energy_tracker)
     }
 
+    /// What the network analysis tool shows: `(links, providers, receivers)`.
+    pub fn net_sizes(&self, net: NetId) -> Option<(usize, usize, usize)> {
+        self.nets
+            .get(&net)
+            .map(|n| (n.links.len(), n.providers.len(), n.receivers.len()))
+    }
+
     /// `updateNodespace`: connects new and changed nodes, then runs every network. `rng(n)`
     /// answers a number below `n`.
     pub fn update<W: EnergyHandlers<H>>(

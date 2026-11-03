@@ -5,6 +5,8 @@
     "ntm:ore_lead",
     "ntm:ore_deepslate_lead",
     "ntm:ore_tungsten",
-    "ntm:ore_deepslate_tungsten"
+    "ntm:ore_deepslate_tungsten",
+    "ntm:machine_wood_burner",
+    "ntm:machine_shredder"
   ]
 }

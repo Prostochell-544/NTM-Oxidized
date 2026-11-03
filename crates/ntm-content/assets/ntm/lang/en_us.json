@@ -11,5 +11,10 @@
   "block.ntm.ore_tungsten": "Tungsten Ore",
   "block.ntm.ore_deepslate_tungsten": "Deepslate Tungsten Ore",
   "item.ntm.raw_tungsten": "Raw Tungsten",
-  "item.ntm.ingot_tungsten": "Tungsten Ingot"
+  "item.ntm.ingot_tungsten": "Tungsten Ingot",
+  "itemGroup.ntm.machines": "NTM Machines",
+  "block.ntm.red_cable": "Red Copper Cable",
+  "block.ntm.machine_wood_burner": "Wood-Burning Generator",
+  "block.ntm.machine_shredder": "Shredder",
+  "item.ntm.power_net_tool": "Cable Network Analysis Tool"
 }

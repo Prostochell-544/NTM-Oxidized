@@ -1,0 +1,10 @@
+{
+  "template": "minecraft:chorus_plant",
+  "connects_to": "#ntm:cable_connects",
+  "thickness": 5,
+  "properties": {
+    "hardness": 5.0,
+    "explosion_resistance": 10.0,
+    "sounds": "minecraft:iron_block"
+  }
+}

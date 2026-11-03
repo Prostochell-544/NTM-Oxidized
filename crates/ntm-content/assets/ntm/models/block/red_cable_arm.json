@@ -1,0 +1,70 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "ntm:block/cable_neo",
+    "cable": "ntm:block/cable_neo"
+  },
+  "elements": [
+    {
+      "from": [
+        5.5,
+        5.5,
+        0
+      ],
+      "to": [
+        10.5,
+        10.5,
+        5.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            11,
+            9,
+            16
+          ],
+          "texture": "#cable"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5,
+            5.5
+          ],
+          "texture": "#cable"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5,
+            5.5
+          ],
+          "texture": "#cable"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            5,
+            5.5
+          ],
+          "rotation": 90,
+          "texture": "#cable"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5,
+            5.5
+          ],
+          "rotation": 90,
+          "texture": "#cable"
+        }
+      }
+    }
+  ]
+}
