@@ -13,6 +13,13 @@
     "ntm:ore_tungsten",
     "ntm:ore_deepslate_tungsten",
     "ntm:raw_tungsten",
-    "ntm:ingot_tungsten"
+    "ntm:ingot_tungsten",
+    "ntm:powder_titanium",
+    "ntm:powder_lead",
+    "ntm:powder_tungsten",
+    "ntm:powder_copper",
+    "ntm:powder_iron",
+    "ntm:powder_sawdust",
+    "ntm:scrap"
   ]
 }

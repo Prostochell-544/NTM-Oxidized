@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:iron_ore",
+  "result": {
+    "id": "ntm:powder_iron",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:cobbled_deepslate",
+  "result": {
+    "id": "minecraft:gravel",
+    "count": 1
+  }
+}

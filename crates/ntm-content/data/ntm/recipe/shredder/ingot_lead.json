@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ingot_lead",
+  "result": {
+    "id": "ntm:powder_lead",
+    "count": 1
+  }
+}

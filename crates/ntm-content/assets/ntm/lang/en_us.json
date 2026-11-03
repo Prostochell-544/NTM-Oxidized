@@ -16,5 +16,14 @@
   "block.ntm.red_cable": "Red Copper Cable",
   "block.ntm.machine_wood_burner": "Wood-Burning Generator",
   "block.ntm.machine_shredder": "Shredder",
-  "item.ntm.power_net_tool": "Cable Network Analysis Tool"
+  "item.ntm.power_net_tool": "Cable Network Analysis Tool",
+  "item.ntm.blades_steel": "Steel Shredder Blades",
+  "item.ntm.blades_titanium": "Titanium Shredder Blades",
+  "item.ntm.powder_titanium": "Titanium Powder",
+  "item.ntm.powder_lead": "Lead Powder",
+  "item.ntm.powder_tungsten": "Tungsten Powder",
+  "item.ntm.powder_copper": "Copper Powder",
+  "item.ntm.powder_iron": "Iron Powder",
+  "item.ntm.powder_sawdust": "Sawdust",
+  "item.ntm.scrap": "Scrap"
 }

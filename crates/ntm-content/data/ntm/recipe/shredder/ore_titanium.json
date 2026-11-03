@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_titanium",
+  "result": {
+    "id": "ntm:powder_titanium",
+    "count": 2
+  }
+}

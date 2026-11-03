@@ -5,6 +5,8 @@
     "ntm:red_cable",
     "ntm:machine_wood_burner",
     "ntm:machine_shredder",
-    "ntm:power_net_tool"
+    "ntm:power_net_tool",
+    "ntm:blades_steel",
+    "ntm:blades_titanium"
   ]
 }

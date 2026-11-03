@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:cobblestone",
+  "result": {
+    "id": "minecraft:gravel",
+    "count": 1
+  }
+}

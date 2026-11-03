@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_deepslate_tungsten",
+  "result": {
+    "id": "ntm:powder_tungsten",
+    "count": 2
+  }
+}

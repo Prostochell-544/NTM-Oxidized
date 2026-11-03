@@ -95,3 +95,35 @@ hook_version = 1
 kind = "HEAD"
 helper = "use_item_on.rs"
 bindings = [{ name = "game", ty = "&mut Game<'_>", value = "&mut *self" }, { name = "stack", ty = "&ItemStack", value = "stack" }, { name = "pos", ty = "[i32; 3]", value = "pos" }, { name = "claimed", ty = "&mut bool", value = "claimed" }]
+
+[[injection]]
+id = "screen"
+hook = "screen"
+hook_version = 1
+kind = "HEAD"
+helper = "screen.rs"
+bindings = [{ name = "block", ty = "&str", value = "block" }, { name = "screen", ty = "&mut Option<NativeScreen>", value = "screen" }]
+
+[[injection]]
+id = "screen_draw"
+hook = "screen_draw"
+hook_version = 1
+kind = "HEAD"
+helper = "screen_draw.rs"
+bindings = [{ name = "game", ty = "&Game<'_>", value = "&*self" }, { name = "block", ty = "&str", value = "block" }, { name = "data", ty = "&[i32]", value = "data" }, { name = "batch", ty = "&mut HudBatch", value = "batch" }, { name = "origin", ty = "[f32; 2]", value = "origin" }]
+
+[[injection]]
+id = "screen_tooltip"
+hook = "screen_tooltip"
+hook_version = 1
+kind = "HEAD"
+helper = "screen_tooltip.rs"
+bindings = [{ name = "block", ty = "&str", value = "block" }, { name = "data", ty = "&[i32]", value = "data" }, { name = "at", ty = "[f32; 2]", value = "at" }, { name = "lines", ty = "&mut Vec<String>", value = "lines" }]
+
+[[injection]]
+id = "menu_slot_rules"
+hook = "menu_slot_rules"
+hook_version = 1
+kind = "HEAD"
+helper = "menu_slot_rules.rs"
+bindings = [{ name = "menu", ty = "&str", value = "menu" }, { name = "slot", ty = "usize", value = "slot" }, { name = "stack", ty = "&ItemStack", value = "stack" }, { name = "may_place", ty = "&mut bool", value = "may_place" }]
