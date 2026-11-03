@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:block_meteor",
+  "result": {
+    "id": "ntm:powder_meteorite",
+    "count": 10
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:dusts/lapis",
+  "result": {
+    "id": "ntm:powder_cobalt_tiny"
+  }
+}

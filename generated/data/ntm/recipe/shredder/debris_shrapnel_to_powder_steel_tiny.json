@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:debris_shrapnel",
+  "result": {
+    "id": "ntm:powder_steel_tiny",
+    "count": 5
+  }
+}

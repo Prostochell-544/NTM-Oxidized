@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:pipe_steel",
+  "result": {
+    "id": "ntm:powder_steel",
+    "count": 27
+  }
+}

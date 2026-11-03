@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:coil_copper",
+  "result": {
+    "id": "ntm:powder_red_copper"
+  }
+}

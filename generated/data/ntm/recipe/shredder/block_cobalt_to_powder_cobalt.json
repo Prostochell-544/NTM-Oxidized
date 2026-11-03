@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/cobalt",
+  "result": {
+    "id": "ntm:powder_cobalt",
+    "count": 9
+  }
+}

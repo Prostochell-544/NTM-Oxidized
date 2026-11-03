@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:brick",
+  "result": {
+    "id": "minecraft:clay_ball"
+  }
+}

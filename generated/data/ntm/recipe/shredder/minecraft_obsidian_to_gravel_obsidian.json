@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:obsidian",
+  "result": {
+    "id": "ntm:gravel_obsidian"
+  }
+}

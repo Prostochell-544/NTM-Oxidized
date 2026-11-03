@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:fragment_niobium",
+  "result": {
+    "id": "ntm:powder_niobium_tiny"
+  }
+}

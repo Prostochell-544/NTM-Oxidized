@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/ra226",
+  "result": {
+    "id": "ntm:powder_ra226",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_niter",
+  "result": {
+    "id": "ntm:niter",
+    "count": 8
+  }
+}

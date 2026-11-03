@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/bismuth",
+  "result": {
+    "id": "ntm:powder_bismuth",
+    "count": 9
+  }
+}

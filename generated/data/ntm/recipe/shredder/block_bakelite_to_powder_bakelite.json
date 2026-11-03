@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/bakelite",
+  "result": {
+    "id": "ntm:powder_bakelite",
+    "count": 9
+  }
+}

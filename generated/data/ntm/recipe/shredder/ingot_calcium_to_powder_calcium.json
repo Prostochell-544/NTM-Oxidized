@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/calcium",
+  "result": {
+    "id": "ntm:powder_calcium"
+  }
+}

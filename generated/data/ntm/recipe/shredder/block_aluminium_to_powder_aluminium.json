@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/aluminium",
+  "result": {
+    "id": "ntm:powder_aluminium",
+    "count": 9
+  }
+}

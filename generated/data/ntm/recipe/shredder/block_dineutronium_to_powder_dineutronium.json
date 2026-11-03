@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/dineutronium",
+  "result": {
+    "id": "ntm:powder_dineutronium",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_schraranium",
+  "result": {
+    "id": "ntm:nugget_schrabidium",
+    "count": 3
+  }
+}

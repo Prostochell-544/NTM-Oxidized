@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:sandstone",
+  "result": {
+    "id": "minecraft:sand",
+    "count": 4
+  }
+}

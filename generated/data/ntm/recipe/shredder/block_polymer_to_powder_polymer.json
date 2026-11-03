@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/polymer",
+  "result": {
+    "id": "ntm:powder_polymer",
+    "count": 9
+  }
+}

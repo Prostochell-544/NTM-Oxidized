@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/niobium",
+  "result": {
+    "id": "ntm:powder_niobium",
+    "count": 9
+  }
+}

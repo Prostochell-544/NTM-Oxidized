@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/red_copper",
+  "result": {
+    "id": "ntm:powder_red_copper",
+    "count": 9
+  }
+}

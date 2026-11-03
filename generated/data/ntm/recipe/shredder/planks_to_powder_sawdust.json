@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#minecraft:planks",
+  "result": {
+    "id": "ntm:powder_sawdust"
+  }
+}

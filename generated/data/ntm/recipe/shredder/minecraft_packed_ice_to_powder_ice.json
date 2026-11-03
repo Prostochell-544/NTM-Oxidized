@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:packed_ice",
+  "result": {
+    "id": "ntm:powder_ice"
+  }
+}

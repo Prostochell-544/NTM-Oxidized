@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:stone_gneiss",
+  "result": {
+    "id": "ntm:powder_lithium_tiny",
+    "count": 1
+  }
+}

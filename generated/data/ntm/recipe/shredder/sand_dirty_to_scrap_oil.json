@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:sand_dirty",
+  "result": {
+    "id": "ntm:scrap_oil"
+  }
+}

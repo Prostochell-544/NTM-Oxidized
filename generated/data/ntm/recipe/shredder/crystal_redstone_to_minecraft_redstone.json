@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_redstone",
+  "result": {
+    "id": "minecraft:redstone",
+    "count": 8
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/schrabidium",
+  "result": {
+    "id": "ntm:powder_schrabidium"
+  }
+}

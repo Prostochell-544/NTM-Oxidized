@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:deepslate_redstone_ore",
+  "result": {
+    "id": "minecraft:redstone",
+    "count": 6
+  }
+}

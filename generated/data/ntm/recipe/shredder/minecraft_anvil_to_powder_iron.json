@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:anvil",
+  "result": {
+    "id": "ntm:powder_iron",
+    "count": 31
+  }
+}

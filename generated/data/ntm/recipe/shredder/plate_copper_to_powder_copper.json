@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/copper",
+  "result": {
+    "id": "ntm:powder_copper"
+  }
+}

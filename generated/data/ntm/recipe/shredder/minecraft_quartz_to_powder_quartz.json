@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:quartz",
+  "result": {
+    "id": "ntm:powder_quartz"
+  }
+}

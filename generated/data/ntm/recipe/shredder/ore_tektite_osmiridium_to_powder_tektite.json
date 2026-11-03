@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_tektite_osmiridium",
+  "result": {
+    "id": "ntm:powder_tektite"
+  }
+}

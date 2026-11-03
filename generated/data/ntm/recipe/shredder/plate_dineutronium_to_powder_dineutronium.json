@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/dineutronium",
+  "result": {
+    "id": "ntm:powder_dineutronium"
+  }
+}

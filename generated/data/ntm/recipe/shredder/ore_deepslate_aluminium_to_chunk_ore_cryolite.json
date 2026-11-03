@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_deepslate_aluminium",
+  "result": {
+    "id": "ntm:chunk_ore_cryolite",
+    "count": 2
+  }
+}

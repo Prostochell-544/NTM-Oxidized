@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/coltan",
+  "result": {
+    "id": "ntm:powder_coltan",
+    "count": 9
+  }
+}

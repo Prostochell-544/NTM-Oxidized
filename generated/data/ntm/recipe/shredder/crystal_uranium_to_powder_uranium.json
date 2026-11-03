@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_uranium",
+  "result": {
+    "id": "ntm:powder_uranium",
+    "count": 3
+  }
+}

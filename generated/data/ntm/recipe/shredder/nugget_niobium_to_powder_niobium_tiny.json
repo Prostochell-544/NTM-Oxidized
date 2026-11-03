@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:nuggets/niobium",
+  "result": {
+    "id": "ntm:powder_niobium_tiny"
+  }
+}

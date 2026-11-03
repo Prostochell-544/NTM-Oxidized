@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/aluminium",
+  "result": {
+    "id": "ntm:powder_aluminium"
+  }
+}

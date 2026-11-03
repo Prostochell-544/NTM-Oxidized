@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:sandstone_stairs",
+  "result": {
+    "id": "minecraft:sand",
+    "count": 6
+  }
+}

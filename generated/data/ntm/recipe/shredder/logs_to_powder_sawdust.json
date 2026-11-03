@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#minecraft:logs",
+  "result": {
+    "id": "ntm:powder_sawdust",
+    "count": 4
+  }
+}

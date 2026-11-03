@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/au198",
+  "result": {
+    "id": "ntm:powder_au198"
+  }
+}

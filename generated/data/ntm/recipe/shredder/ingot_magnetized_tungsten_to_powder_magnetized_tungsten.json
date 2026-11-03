@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/magnetized_tungsten",
+  "result": {
+    "id": "ntm:powder_magnetized_tungsten"
+  }
+}

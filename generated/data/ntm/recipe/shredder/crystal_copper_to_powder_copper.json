@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_copper",
+  "result": {
+    "id": "ntm:powder_copper",
+    "count": 3
+  }
+}

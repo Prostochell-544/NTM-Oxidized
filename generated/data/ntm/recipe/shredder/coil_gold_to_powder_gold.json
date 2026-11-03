@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:coil_gold",
+  "result": {
+    "id": "ntm:powder_gold"
+  }
+}

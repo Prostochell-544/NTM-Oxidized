@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/lanthanium",
+  "result": {
+    "id": "ntm:powder_lanthanium",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/beryllium",
+  "result": {
+    "id": "ntm:powder_beryllium",
+    "count": 9
+  }
+}

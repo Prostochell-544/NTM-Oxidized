@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:deepslate_gold_ore",
+  "result": {
+    "id": "ntm:powder_gold",
+    "count": 2
+  }
+}

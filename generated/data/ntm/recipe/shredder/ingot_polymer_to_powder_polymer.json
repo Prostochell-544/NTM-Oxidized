@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/polymer",
+  "result": {
+    "id": "ntm:powder_polymer"
+  }
+}

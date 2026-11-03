@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:gravel",
+  "result": {
+    "id": "minecraft:sand"
+  }
+}

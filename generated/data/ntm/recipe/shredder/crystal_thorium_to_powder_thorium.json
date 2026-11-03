@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_thorium",
+  "result": {
+    "id": "ntm:powder_thorium",
+    "count": 3
+  }
+}

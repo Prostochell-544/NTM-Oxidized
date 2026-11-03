@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:chiseled_quartz_block",
+  "result": {
+    "id": "ntm:powder_quartz",
+    "count": 4
+  }
+}

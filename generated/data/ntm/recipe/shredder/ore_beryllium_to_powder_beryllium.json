@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_beryllium",
+  "result": {
+    "id": "ntm:powder_beryllium",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:debris_element",
+  "result": {
+    "id": "ntm:scrap_nuclear",
+    "count": 4
+  }
+}

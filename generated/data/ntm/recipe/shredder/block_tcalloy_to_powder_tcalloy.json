@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/tcalloy",
+  "result": {
+    "id": "ntm:powder_tcalloy",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_lapis",
+  "result": {
+    "id": "ntm:powder_lapis",
+    "count": 8
+  }
+}

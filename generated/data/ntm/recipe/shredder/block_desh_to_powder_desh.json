@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/desh",
+  "result": {
+    "id": "ntm:powder_desh",
+    "count": 9
+  }
+}

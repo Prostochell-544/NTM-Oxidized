@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:gold_ingot",
+  "result": {
+    "id": "ntm:powder_gold"
+  }
+}

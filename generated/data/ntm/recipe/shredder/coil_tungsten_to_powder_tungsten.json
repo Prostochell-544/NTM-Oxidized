@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:coil_tungsten",
+  "result": {
+    "id": "ntm:powder_tungsten"
+  }
+}

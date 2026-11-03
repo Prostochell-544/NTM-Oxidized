@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_starmetal",
+  "result": {
+    "id": "ntm:powder_dura_steel",
+    "count": 6
+  }
+}

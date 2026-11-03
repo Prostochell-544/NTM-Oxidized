@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/dura_steel",
+  "result": {
+    "id": "ntm:powder_dura_steel"
+  }
+}

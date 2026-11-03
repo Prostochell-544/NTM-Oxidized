@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/euphemium",
+  "result": {
+    "id": "ntm:powder_euphemium",
+    "count": 9
+  }
+}

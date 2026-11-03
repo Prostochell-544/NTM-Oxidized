@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:fragment_cobalt",
+  "result": {
+    "id": "ntm:powder_cobalt_tiny"
+  }
+}

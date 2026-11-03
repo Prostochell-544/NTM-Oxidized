@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:debris_exchanger",
+  "result": {
+    "id": "ntm:powder_steel",
+    "count": 3
+  }
+}

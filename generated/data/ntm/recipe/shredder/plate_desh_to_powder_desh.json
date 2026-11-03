@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/desh",
+  "result": {
+    "id": "ntm:powder_desh"
+  }
+}

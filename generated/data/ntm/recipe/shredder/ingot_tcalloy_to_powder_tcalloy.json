@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/tcalloy",
+  "result": {
+    "id": "ntm:powder_tcalloy"
+  }
+}

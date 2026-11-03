@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:clay",
+  "result": {
+    "id": "minecraft:clay_ball",
+    "count": 4
+  }
+}

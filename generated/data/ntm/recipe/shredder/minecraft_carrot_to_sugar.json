@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:carrot",
+  "result": {
+    "id": "minecraft:sugar"
+  }
+}

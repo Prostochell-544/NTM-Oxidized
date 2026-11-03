@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/bismuth",
+  "result": {
+    "id": "ntm:powder_bismuth"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/boron",
+  "result": {
+    "id": "ntm:powder_boron",
+    "count": 9
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:fragment_boron",
+  "result": {
+    "id": "ntm:powder_boron_tiny"
+  }
+}

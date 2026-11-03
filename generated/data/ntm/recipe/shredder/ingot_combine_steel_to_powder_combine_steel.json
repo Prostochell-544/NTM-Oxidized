@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/combine_steel",
+  "result": {
+    "id": "ntm:powder_combine_steel"
+  }
+}

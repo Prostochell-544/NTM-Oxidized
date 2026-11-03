@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_iron",
+  "result": {
+    "id": "ntm:powder_iron",
+    "count": 3
+  }
+}

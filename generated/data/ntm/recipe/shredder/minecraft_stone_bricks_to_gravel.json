@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:stone_bricks",
+  "result": {
+    "id": "minecraft:gravel"
+  }
+}

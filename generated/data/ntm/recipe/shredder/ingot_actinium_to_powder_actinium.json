@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/actinium",
+  "result": {
+    "id": "ntm:powder_actinium"
+  }
+}

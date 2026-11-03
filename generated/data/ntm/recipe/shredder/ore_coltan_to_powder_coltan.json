@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_coltan",
+  "result": {
+    "id": "ntm:powder_coltan",
+    "count": 2
+  }
+}

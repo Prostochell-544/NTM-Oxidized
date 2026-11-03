@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/tungsten",
+  "result": {
+    "id": "ntm:powder_tungsten",
+    "count": 9
+  }
+}

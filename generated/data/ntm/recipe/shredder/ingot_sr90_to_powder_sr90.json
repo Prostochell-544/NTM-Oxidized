@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/sr90",
+  "result": {
+    "id": "ntm:powder_sr90"
+  }
+}

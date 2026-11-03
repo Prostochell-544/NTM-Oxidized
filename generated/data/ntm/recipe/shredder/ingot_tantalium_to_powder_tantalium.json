@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/tantalium",
+  "result": {
+    "id": "ntm:powder_tantalium"
+  }
+}

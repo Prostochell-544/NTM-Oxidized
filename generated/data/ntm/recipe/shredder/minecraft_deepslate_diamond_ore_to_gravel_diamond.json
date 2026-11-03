@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:deepslate_diamond_ore",
+  "result": {
+    "id": "ntm:gravel_diamond",
+    "count": 2
+  }
+}

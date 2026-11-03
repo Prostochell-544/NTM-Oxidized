@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:can_empty",
+  "result": {
+    "id": "ntm:powder_aluminium",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_lithium",
+  "result": {
+    "id": "ntm:powder_lithium",
+    "count": 3
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_fluorite",
+  "result": {
+    "id": "ntm:fluorite",
+    "count": 8
+  }
+}

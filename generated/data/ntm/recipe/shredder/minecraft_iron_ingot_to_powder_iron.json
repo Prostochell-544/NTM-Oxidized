@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:iron_ingot",
+  "result": {
+    "id": "ntm:powder_iron"
+  }
+}

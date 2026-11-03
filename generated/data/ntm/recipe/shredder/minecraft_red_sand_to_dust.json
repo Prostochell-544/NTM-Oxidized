@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:red_sand",
+  "result": {
+    "id": "ntm:dust",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/dura_steel",
+  "result": {
+    "id": "ntm:powder_dura_steel",
+    "count": 9
+  }
+}

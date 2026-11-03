@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:nuggets/sr90",
+  "result": {
+    "id": "ntm:powder_sr90_tiny"
+  }
+}

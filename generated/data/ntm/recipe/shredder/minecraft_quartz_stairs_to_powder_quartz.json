@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:quartz_stairs",
+  "result": {
+    "id": "ntm:powder_quartz",
+    "count": 3
+  }
+}

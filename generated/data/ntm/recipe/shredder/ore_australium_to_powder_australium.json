@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_australium",
+  "result": {
+    "id": "ntm:powder_australium",
+    "count": 2
+  }
+}

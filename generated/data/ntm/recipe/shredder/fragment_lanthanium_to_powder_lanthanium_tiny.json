@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:fragment_lanthanium",
+  "result": {
+    "id": "ntm:powder_lanthanium_tiny"
+  }
+}

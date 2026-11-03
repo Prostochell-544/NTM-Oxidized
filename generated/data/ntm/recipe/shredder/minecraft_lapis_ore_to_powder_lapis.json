@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:lapis_ore",
+  "result": {
+    "id": "ntm:powder_lapis",
+    "count": 6
+  }
+}

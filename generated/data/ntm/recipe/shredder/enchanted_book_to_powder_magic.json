@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:enchanted_book",
+  "result": {
+    "id": "ntm:powder_magic",
+    "count": 1
+  }
+}

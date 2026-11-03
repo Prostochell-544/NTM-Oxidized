@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/tantalium",
+  "result": {
+    "id": "ntm:powder_tantalium",
+    "count": 9
+  }
+}

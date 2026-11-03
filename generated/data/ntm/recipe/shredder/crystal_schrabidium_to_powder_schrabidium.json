@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_schrabidium",
+  "result": {
+    "id": "ntm:powder_schrabidium",
+    "count": 3
+  }
+}

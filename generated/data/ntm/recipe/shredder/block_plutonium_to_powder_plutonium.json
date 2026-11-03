@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/plutonium",
+  "result": {
+    "id": "ntm:powder_plutonium",
+    "count": 9
+  }
+}

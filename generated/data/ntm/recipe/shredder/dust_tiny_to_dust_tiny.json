@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:dust_tiny",
+  "result": {
+    "id": "ntm:dust_tiny"
+  }
+}

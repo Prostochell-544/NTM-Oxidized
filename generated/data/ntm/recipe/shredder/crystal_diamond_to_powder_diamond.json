@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:crystal_diamond",
+  "result": {
+    "id": "ntm:powder_diamond",
+    "count": 3
+  }
+}

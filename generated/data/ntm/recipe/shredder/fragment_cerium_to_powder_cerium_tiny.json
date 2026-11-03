@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:fragment_cerium",
+  "result": {
+    "id": "ntm:powder_cerium_tiny"
+  }
+}

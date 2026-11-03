@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/lead",
+  "result": {
+    "id": "ntm:powder_lead",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/actinium",
+  "result": {
+    "id": "ntm:powder_actinium",
+    "count": 9
+  }
+}

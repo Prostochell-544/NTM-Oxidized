@@ -1,0 +1,8 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:storage_blocks/schrabidate",
+  "result": {
+    "id": "ntm:powder_schrabidate",
+    "count": 9
+  }
+}

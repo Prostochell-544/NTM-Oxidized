@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:plates/euphemium",
+  "result": {
+    "id": "ntm:powder_euphemium"
+  }
+}

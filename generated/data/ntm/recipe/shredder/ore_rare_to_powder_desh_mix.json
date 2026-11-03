@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:ore_rare",
+  "result": {
+    "id": "ntm:powder_desh_mix"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "#c:ingots/boron",
+  "result": {
+    "id": "ntm:powder_boron"
+  }
+}

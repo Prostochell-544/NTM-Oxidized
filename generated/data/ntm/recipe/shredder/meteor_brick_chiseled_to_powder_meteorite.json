@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "ntm:meteor_brick_chiseled",
+  "result": {
+    "id": "ntm:powder_meteorite"
+  }
+}

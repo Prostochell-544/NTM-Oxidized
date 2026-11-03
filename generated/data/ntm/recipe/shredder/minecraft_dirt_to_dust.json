@@ -1,0 +1,7 @@
+{
+  "type": "ntm:shredder",
+  "ingredient": "minecraft:dirt",
+  "result": {
+    "id": "ntm:dust"
+  }
+}
