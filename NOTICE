@@ -7,3 +7,11 @@ Licensed under the GNU Lesser General Public License v3.0.
 
 The code in this repository is derived from that mod and is licensed under the
 same terms: see LICENSE (GPL-3.0) and LICENSE.LESSER (LGPL-3.0).
+
+crates/ntm-content is licensed under the GNU General Public License v3.0 or
+later: see crates/ntm-content/LICENSE. It takes data and assets from
+
+Reinhardt's HBM
+Copyright SakurakoujiSaika1926 and contributors
+https://github.com/SakurakoujiSaika1926/Reinhardt-s-HBM-NeoPort
+Licensed under the GNU General Public License v3.0.

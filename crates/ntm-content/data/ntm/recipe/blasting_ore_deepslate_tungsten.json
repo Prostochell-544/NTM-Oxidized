@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": "ntm:ore_deepslate_tungsten",
+  "result": {
+    "id": "ntm:ingot_tungsten"
+  },
+  "experience": 6,
+  "cookingtime": 100
+}

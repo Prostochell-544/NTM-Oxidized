@@ -1,0 +1,18 @@
+{
+  "title": "itemGroup.ntm.resources",
+  "icon": "ntm:ingot_titanium",
+  "items": [
+    "ntm:ore_titanium",
+    "ntm:ore_deepslate_titanium",
+    "ntm:raw_titanium",
+    "ntm:ingot_titanium",
+    "ntm:ore_lead",
+    "ntm:ore_deepslate_lead",
+    "ntm:raw_lead",
+    "ntm:ingot_lead",
+    "ntm:ore_tungsten",
+    "ntm:ore_deepslate_tungsten",
+    "ntm:raw_tungsten",
+    "ntm:ingot_tungsten"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "itemGroup.ntm.resources": "NTM Resources",
+  "block.ntm.ore_titanium": "Titanium Ore",
+  "block.ntm.ore_deepslate_titanium": "Deepslate Titanium Ore",
+  "item.ntm.raw_titanium": "Raw Titanium",
+  "item.ntm.ingot_titanium": "Titanium Ingot",
+  "block.ntm.ore_lead": "Lead Ore",
+  "block.ntm.ore_deepslate_lead": "Deepslate Lead Ore",
+  "item.ntm.raw_lead": "Raw Lead",
+  "item.ntm.ingot_lead": "Lead Ingot",
+  "block.ntm.ore_tungsten": "Tungsten Ore",
+  "block.ntm.ore_deepslate_tungsten": "Deepslate Tungsten Ore",
+  "item.ntm.raw_tungsten": "Raw Tungsten",
+  "item.ntm.ingot_tungsten": "Tungsten Ingot"
+}
