@@ -5,6 +5,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parent
 CRATES = ROOT / "crates"
+TEXTURES = ROOT / "textures"
 DIST = ROOT / "dist"
 SKIP = shutil.ignore_patterns("target", "__pycache__")
 # Bundle crate -> where ntm-core goes inside it.
@@ -18,6 +19,12 @@ def main():
         shutil.copytree(CRATES / crate, out, ignore=SKIP)
         shutil.copytree(CRATES / "ntm-core", out / core, ignore=SKIP)
         print(out)
+    # The content mod the game loads with --dev-mod: data and models, plus the texture pack's assets.
+    out = DIST / "ntm_content"
+    shutil.rmtree(out, ignore_errors=True)
+    shutil.copytree(CRATES / "ntm-content", out, ignore=SKIP)
+    shutil.copytree(TEXTURES / "assets", out / "assets", dirs_exist_ok=True)
+    print(out)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "description": "HBM's Nuclear Tech textures",
+        "min_format": [97, 0],
+        "max_format": [97, 1]
+    }
+}
