@@ -7,7 +7,9 @@ impl Hooks for NtmHooks {
     fn server_tick(&self, _host: &mut dyn Host, _event: &mut ServerTickEvent<'_>) {
         static ONCE: Once = Once::new();
         ONCE.call_once(|| {
+            // The game's log keeps info lines only from targets starting with "horizon".
             log::info!(
+                target: "horizon_ntm_api",
                 "[ntm_api] {} ticking on thread {:?}",
                 ntm_core::NAME,
                 std::thread::current().name()
