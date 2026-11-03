@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "modifier": [
+            {
+              "condition": {
+                "block": "ntm:brick_fire_slab",
+                "properties": {
+                  "type": "double"
+                },
+                "type": "minecraft:block_state_property"
+              },
+              "count": 2,
+              "type": "minecraft:set_count"
+            }
+          ],
+          "name": "ntm:brick_fire_slab",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:block"
+}

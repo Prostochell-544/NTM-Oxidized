@@ -1,0 +1,16 @@
+{
+  "category": "redstone",
+  "key": {
+    "I": "#c:plates/steel",
+    "S": "#c:plates/lead"
+  },
+  "pattern": [
+    "II",
+    "SS",
+    "II"
+  ],
+  "result": {
+    "id": "ntm:door_bunker"
+  },
+  "type": "minecraft:crafting_shaped"
+}

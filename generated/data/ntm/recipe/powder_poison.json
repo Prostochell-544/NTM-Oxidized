@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "minecraft:spider_eye",
+    "minecraft:redstone",
+    "minecraft:quartz"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:powder_poison"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/igniter"
+  },
+  "parent": "minecraft:item/generated"
+}

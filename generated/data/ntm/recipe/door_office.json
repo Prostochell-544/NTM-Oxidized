@@ -1,0 +1,16 @@
+{
+  "category": "redstone",
+  "key": {
+    "I": "#minecraft:planks",
+    "S": "#c:plates/iron"
+  },
+  "pattern": [
+    "II",
+    "SS",
+    "II"
+  ],
+  "result": {
+    "id": "ntm:door_office"
+  },
+  "type": "minecraft:crafting_shaped"
+}

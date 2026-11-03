@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/aluminium",
+  "result": {
+    "id": "ntm:ingot_aluminium"
+  },
+  "type": "minecraft:smelting"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:pink_planks"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:pink_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

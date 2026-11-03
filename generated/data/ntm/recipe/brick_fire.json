@@ -1,0 +1,14 @@
+{
+  "category": "building",
+  "key": {
+    "B": "#c:ingots/firebrick"
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "result": {
+    "id": "ntm:brick_fire"
+  },
+  "type": "minecraft:crafting_shaped"
+}

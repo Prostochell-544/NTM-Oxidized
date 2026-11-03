@@ -1,0 +1,18 @@
+{
+  "category": "building",
+  "key": {
+    "C": "minecraft:clay_ball",
+    "D": "ntm:ducrete",
+    "L": "#c:plates/lead"
+  },
+  "pattern": [
+    "CDC",
+    "DLD",
+    "CDC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:brick_ducrete"
+  },
+  "type": "minecraft:crafting_shaped"
+}

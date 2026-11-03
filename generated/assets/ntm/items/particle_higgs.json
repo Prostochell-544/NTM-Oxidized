@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/particle_higgs",
+    "type": "minecraft:model"
+  }
+}

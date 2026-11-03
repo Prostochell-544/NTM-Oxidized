@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/bottle_mercury"
+  },
+  "parent": "minecraft:item/generated"
+}

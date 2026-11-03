@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "#c:ingots/iron",
+    "I": "#c:plates/steel"
+  },
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "result": {
+    "id": "ntm:sawblade"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ntm:block/cm_heat_side",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ntm:block/cm_heat_side"
+    },
+    "axis=z": {
+      "model": "ntm:block/cm_heat_side",
+      "x": 90
+    }
+  }
+}

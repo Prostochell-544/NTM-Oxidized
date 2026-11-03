@@ -1,0 +1,16 @@
+{
+  "key": {
+    "D": "ntm:bolt_dura_steel",
+    "S": "#c:plates/steel",
+    "T": "#c:ingots/tungsten"
+  },
+  "pattern": [
+    "SSS",
+    "STS",
+    " D "
+  ],
+  "result": {
+    "id": "ntm:piston_selenium"
+  },
+  "type": "minecraft:crafting_shaped"
+}

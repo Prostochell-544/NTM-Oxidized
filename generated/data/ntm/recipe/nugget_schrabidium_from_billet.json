@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_schrabidium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_schrabidium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

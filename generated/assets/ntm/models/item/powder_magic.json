@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_magic"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:block_fiberglass"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_fiberglass"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

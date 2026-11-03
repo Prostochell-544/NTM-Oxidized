@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/battery_spark"
+  },
+  "parent": "minecraft:item/generated"
+}

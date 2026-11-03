@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "C": "ntm:tile_lab"
+  },
+  "pattern": [
+    " C ",
+    "C C",
+    " C "
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:tile_lab_cracked"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/red_copper",
+  "result": {
+    "id": "ntm:ingot_red_copper"
+  },
+  "type": "minecraft:smelting"
+}

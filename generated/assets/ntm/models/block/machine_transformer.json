@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "ntm:block/machine_transformer_top_iron",
+    "side": "ntm:block/machine_transformer",
+    "top": "ntm:block/machine_transformer_top_iron"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "#c:ingots/copper",
+    "G": "ntm:cordite",
+    "L": "#c:plates/lead"
+  },
+  "pattern": [
+    "LLL",
+    "GGG",
+    "CCC"
+  ],
+  "result": {
+    "id": "ntm:ammo_dgk"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/ring_starmetal"
+  },
+  "parent": "minecraft:item/generated"
+}

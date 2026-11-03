@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/sr90"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_sr90"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "#minecraft:wool",
+    "P": "#c:dusts/bromine",
+    "S": "minecraft:string"
+  },
+  "pattern": [
+    "SCS",
+    "CPC",
+    "SCS"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:asbestos_cloth"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_australium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_australium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

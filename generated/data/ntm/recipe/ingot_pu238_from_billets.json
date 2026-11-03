@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_pu238",
+    "ntm:billet_pu238",
+    "ntm:billet_pu238"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_pu238"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

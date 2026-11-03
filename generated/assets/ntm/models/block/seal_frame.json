@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/seal_frame"
+  },
+  "parent": "minecraft:block/cube_all"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:reinforced_sand"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:reinforced_sand_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

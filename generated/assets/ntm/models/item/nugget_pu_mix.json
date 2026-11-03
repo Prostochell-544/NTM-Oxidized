@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/nugget_pu_mix"
+  },
+  "parent": "minecraft:item/generated"
+}

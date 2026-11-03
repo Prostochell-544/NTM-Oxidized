@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_schrabidium",
+    "ntm:billet_neptunium",
+    "ntm:billet_beryllium"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:billet_schrabidium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

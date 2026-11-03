@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2,
+  "ingredient": "ntm:ore_cobalt",
+  "result": {
+    "id": "ntm:ingot_cobalt"
+  },
+  "type": "minecraft:smelting"
+}

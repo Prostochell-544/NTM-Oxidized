@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/meteor_brick_mossy"
+  },
+  "parent": "minecraft:block/cube_all"
+}

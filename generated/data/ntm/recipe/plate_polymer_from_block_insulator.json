@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/insulator"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:plate_polymer"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

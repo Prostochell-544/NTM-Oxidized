@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/borax",
+    "#c:sands"
+  ],
+  "result": {
+    "count": 16,
+    "id": "ntm:powder_flux"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

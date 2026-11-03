@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_xe135"
+  },
+  "parent": "minecraft:item/generated"
+}

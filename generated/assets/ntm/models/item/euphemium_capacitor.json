@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/euphemium_capacitor"
+  },
+  "parent": "minecraft:item/generated"
+}

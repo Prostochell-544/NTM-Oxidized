@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/schrabidate"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_schrabidate"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

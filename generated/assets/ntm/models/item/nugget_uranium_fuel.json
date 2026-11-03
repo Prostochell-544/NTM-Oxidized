@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/nugget_uranium_fuel"
+  },
+  "parent": "minecraft:item/generated"
+}

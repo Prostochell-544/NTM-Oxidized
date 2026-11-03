@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/thorium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_th232"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "G": "#c:plates/gold",
+    "P": "#c:ingots/plastic"
+  },
+  "pattern": [
+    "GP",
+    "GP",
+    "GP"
+  ],
+  "result": {
+    "id": "ntm:shimmer_handle"
+  },
+  "type": "minecraft:crafting_shaped"
+}

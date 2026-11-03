@@ -1,0 +1,17 @@
+{
+  "category": "building",
+  "key": {
+    "B": "minecraft:sandstone",
+    "F": "minecraft:iron_bars"
+  },
+  "pattern": [
+    "FBF",
+    "BFB",
+    "FBF"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:reinforced_sand"
+  },
+  "type": "minecraft:crafting_shaped"
+}

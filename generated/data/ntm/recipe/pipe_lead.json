@@ -1,0 +1,15 @@
+{
+  "category": "equipment",
+  "key": {
+    "I": "#c:pipes/lead"
+  },
+  "pattern": [
+    "II",
+    " I",
+    " I"
+  ],
+  "result": {
+    "id": "ntm:pipe_lead"
+  },
+  "type": "minecraft:crafting_shaped"
+}

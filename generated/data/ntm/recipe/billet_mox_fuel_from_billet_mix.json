@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_uranium_fuel",
+    "ntm:billet_uranium_fuel",
+    "ntm:billet_pu_mix"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:billet_mox_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

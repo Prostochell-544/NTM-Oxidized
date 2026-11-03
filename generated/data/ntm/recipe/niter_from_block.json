@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/niter"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:niter"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

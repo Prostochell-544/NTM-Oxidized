@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/sand_dirty"
+  },
+  "parent": "minecraft:block/cube_all"
+}

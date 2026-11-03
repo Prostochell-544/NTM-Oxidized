@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_technetium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_technetium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

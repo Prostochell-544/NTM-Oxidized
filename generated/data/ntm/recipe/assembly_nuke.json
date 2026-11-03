@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "E": "ntm:ball_tatb",
+    "P": "ntm:plate_cast_weaponsteel",
+    "S": "ntm:shell_weaponsteel",
+    "W": "ntm:wire_gold"
+  },
+  "pattern": [
+    " WP",
+    "SEP",
+    " WP"
+  ],
+  "result": {
+    "id": "ntm:assembly_nuke"
+  },
+  "type": "minecraft:crafting_shaped"
+}

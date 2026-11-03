@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "E": "#c:ingots/euphemium",
+    "L": "#c:dyes/blue",
+    "W": "minecraft:clock",
+    "Y": "ntm:billet_yharonite"
+  },
+  "pattern": [
+    "LYL",
+    "EWE",
+    "LYL"
+  ],
+  "result": {
+    "id": "ntm:watch"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "children": [
+            {
+              "condition": "minecraft:tool/can_silk_touch",
+              "name": "ntm:ore_fluorite",
+              "type": "minecraft:item"
+            },
+            {
+              "modifier": [
+                {
+                  "add": false,
+                  "count": {
+                    "max": 4,
+                    "min": 2,
+                    "type": "minecraft:uniform"
+                  },
+                  "type": "minecraft:set_count"
+                },
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "type": "minecraft:apply_bonus"
+                },
+                {
+                  "type": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "ntm:fluorite",
+              "type": "minecraft:item"
+            }
+          ],
+          "type": "minecraft:alternatives"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "ntm:blocks/ore_fluorite",
+  "type": "minecraft:block"
+}

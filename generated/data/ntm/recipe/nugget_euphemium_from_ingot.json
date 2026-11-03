@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/euphemium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_euphemium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/steel",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    " PI",
+    "III",
+    " PI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:fins_big_steel"
+  },
+  "type": "minecraft:crafting_shaped"
+}

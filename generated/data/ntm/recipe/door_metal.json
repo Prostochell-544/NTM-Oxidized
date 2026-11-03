@@ -1,0 +1,16 @@
+{
+  "category": "redstone",
+  "key": {
+    "I": "#c:plates/iron",
+    "S": "#c:plates/steel"
+  },
+  "pattern": [
+    "II",
+    "SS",
+    "II"
+  ],
+  "result": {
+    "id": "ntm:door_metal"
+  },
+  "type": "minecraft:crafting_shaped"
+}

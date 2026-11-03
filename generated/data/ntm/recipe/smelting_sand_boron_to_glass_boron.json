@@ -1,0 +1,10 @@
+{
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "ingredient": "ntm:sand_boron",
+  "result": {
+    "id": "ntm:glass_boron"
+  },
+  "type": "minecraft:smelting"
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/chunk_ore_rare",
+    "type": "minecraft:model"
+  }
+}

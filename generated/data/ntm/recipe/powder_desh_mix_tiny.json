@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:tiny_dusts/boron",
+    "#c:tiny_dusts/boron",
+    "#c:tiny_dusts/lanthanium",
+    "#c:tiny_dusts/lanthanium",
+    "#c:tiny_dusts/cerium",
+    "#c:tiny_dusts/cobalt",
+    "#c:tiny_dusts/lithium",
+    "#c:tiny_dusts/neodymium",
+    "#c:tiny_dusts/niobium"
+  ],
+  "result": {
+    "id": "ntm:powder_desh_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

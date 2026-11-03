@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "F": "minecraft:string",
+    "P": "minecraft:paper",
+    "S": "minecraft:slime_ball"
+  },
+  "pattern": [
+    "F",
+    "P",
+    "S"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:ducttape"
+  },
+  "type": "minecraft:crafting_shaped"
+}

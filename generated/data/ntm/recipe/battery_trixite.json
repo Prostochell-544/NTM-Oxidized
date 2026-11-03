@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "D": "ntm:plate_cast_saturnite",
+    "S": "#c:dusts/power",
+    "T": "ntm:crystal_trixite",
+    "W": "ntm:wire_dense_magnetized_tungsten"
+  },
+  "pattern": [
+    " W ",
+    "DSD",
+    "DTD"
+  ],
+  "result": {
+    "id": "ntm:battery_trixite"
+  },
+  "type": "minecraft:crafting_shaped"
+}

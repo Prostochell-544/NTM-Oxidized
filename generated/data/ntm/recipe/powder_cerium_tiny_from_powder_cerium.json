@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/cerium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_cerium_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

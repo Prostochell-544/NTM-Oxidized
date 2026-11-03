@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "key": {
+    "R": "ntm:deco_rbmk"
+  },
+  "pattern": [
+    "R"
+  ],
+  "result": {
+    "id": "ntm:deco_rbmk_smooth"
+  },
+  "type": "minecraft:crafting_shaped"
+}

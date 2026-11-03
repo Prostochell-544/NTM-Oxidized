@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/am242"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_am242"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

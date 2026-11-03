@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "L": "ntm:wire_lead",
+    "Z": "ntm:wire_zirconium"
+  },
+  "pattern": [
+    "ZLZ",
+    "L L",
+    "ZLZ"
+  ],
+  "result": {
+    "id": "ntm:icf_pellet_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

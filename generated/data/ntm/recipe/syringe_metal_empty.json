@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "minecraft:iron_bars",
+    "C": "ntm:rod_empty",
+    "P": "#c:plates/iron"
+  },
+  "pattern": [
+    "P",
+    "C",
+    "B"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:syringe_metal_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

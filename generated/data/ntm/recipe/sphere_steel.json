@@ -1,0 +1,15 @@
+{
+  "key": {
+    "I": "#c:ingots/steel",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    "PIP",
+    "I I",
+    "PIP"
+  ],
+  "result": {
+    "id": "ntm:sphere_steel"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:rod_empty",
+    "ntm:rod_empty",
+    "ntm:rod_empty",
+    "ntm:rod_empty"
+  ],
+  "result": {
+    "id": "ntm:rod_quad_empty"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

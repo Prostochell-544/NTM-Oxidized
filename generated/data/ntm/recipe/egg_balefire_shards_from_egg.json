@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:egg_balefire"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:egg_balefire_shard"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

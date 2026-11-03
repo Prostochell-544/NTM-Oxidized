@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_i131"
+  },
+  "parent": "minecraft:item/generated"
+}

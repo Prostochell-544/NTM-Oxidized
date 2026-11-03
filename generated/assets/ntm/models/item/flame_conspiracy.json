@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/flame_conspiracy"
+  },
+  "parent": "minecraft:item/generated"
+}

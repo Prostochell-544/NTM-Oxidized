@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "D": "#c:ingots/asbestos"
+  },
+  "pattern": [
+    "DD"
+  ],
+  "result": {
+    "count": 16,
+    "id": "ntm:plate_polymer"
+  },
+  "type": "minecraft:crafting_shaped"
+}

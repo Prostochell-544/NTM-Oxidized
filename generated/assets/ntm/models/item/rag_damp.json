@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/rag_damp"
+  },
+  "parent": "minecraft:item/generated"
+}

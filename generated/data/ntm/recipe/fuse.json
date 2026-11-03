@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:plates/steel",
+    "#c:plates/polymer",
+    "ntm:wire_tungsten"
+  ],
+  "result": {
+    "id": "ntm:fuse"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

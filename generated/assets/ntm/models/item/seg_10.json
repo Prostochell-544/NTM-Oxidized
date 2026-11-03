@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/seg_10"
+  },
+  "parent": "minecraft:item/generated"
+}

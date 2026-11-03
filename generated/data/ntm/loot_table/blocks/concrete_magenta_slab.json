@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ntm:blocks/concrete_magenta_slab",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ntm:concrete_magenta_slab"
+        }
+      ]
+    }
+  ]
+}

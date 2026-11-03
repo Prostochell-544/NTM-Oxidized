@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:gravel",
+  "properties": {
+    "hardness": 2.5,
+    "explosion_resistance": 3.0
+  }
+}

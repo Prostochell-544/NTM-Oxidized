@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/ore_gneiss_gold"
+  },
+  "parent": "minecraft:block/cube_all"
+}

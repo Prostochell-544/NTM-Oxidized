@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/assembly_nuke"
+  },
+  "parent": "minecraft:item/generated"
+}

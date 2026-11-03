@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/tantalium",
+  "result": {
+    "id": "ntm:ingot_tantalium"
+  },
+  "type": "minecraft:smelting"
+}

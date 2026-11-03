@@ -1,0 +1,15 @@
+{
+  "category": "building",
+  "key": {
+    "C": "ntm:stone_gneiss"
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:gneiss_tile"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/custom_schrab"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/deuterium_filter",
+    "type": "minecraft:model"
+  }
+}

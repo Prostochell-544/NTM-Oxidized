@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "ntm:block/block_schrabidium_cluster"
+    },
+    "axis=z": {
+      "model": "ntm:block/block_schrabidium_cluster",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "ntm:block/block_schrabidium_cluster",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

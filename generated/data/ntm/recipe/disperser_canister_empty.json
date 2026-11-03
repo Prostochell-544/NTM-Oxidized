@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "G": "ntm:glass_boron",
+    "P": "#c:ingots/hard_plastic"
+  },
+  "pattern": [
+    " P ",
+    "PGP",
+    " P "
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:disperser_canister_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

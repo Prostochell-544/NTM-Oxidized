@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "minecraft:snowball",
+    "#c:dusts/niter",
+    "minecraft:redstone"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:powder_ice"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

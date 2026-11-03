@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/neodymium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_neodymium_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

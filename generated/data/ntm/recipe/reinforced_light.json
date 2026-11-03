@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "B": "minecraft:glowstone",
+    "F": "minecraft:iron_bars"
+  },
+  "pattern": [
+    "FFF",
+    "FBF",
+    "FFF"
+  ],
+  "result": {
+    "id": "ntm:reinforced_light"
+  },
+  "type": "minecraft:crafting_shaped"
+}

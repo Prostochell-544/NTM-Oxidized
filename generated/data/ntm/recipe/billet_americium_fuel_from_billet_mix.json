@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_u238",
+    "ntm:billet_u238",
+    "ntm:billet_am_mix"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:billet_americium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

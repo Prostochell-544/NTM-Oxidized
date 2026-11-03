@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:quartz_pillar",
+  "properties": {
+    "hardness": 3.0,
+    "explosion_resistance": 1.2
+  }
+}

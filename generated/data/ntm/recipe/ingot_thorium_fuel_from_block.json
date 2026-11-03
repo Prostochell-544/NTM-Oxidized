@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/thorium_fuel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_thorium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

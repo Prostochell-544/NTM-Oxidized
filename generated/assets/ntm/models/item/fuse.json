@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/fuse"
+  },
+  "parent": "minecraft:item/generated"
+}

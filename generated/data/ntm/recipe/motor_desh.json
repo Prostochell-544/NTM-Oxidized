@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "ntm:coil_gold_torus",
+    "D": "#c:ingots/desh",
+    "M": "ntm:motor",
+    "P": "#c:ingots/plastic"
+  },
+  "pattern": [
+    "PCP",
+    "DMD",
+    "PCP"
+  ],
+  "result": {
+    "id": "ntm:motor_desh"
+  },
+  "type": "minecraft:crafting_shaped"
+}

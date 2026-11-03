@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/coin_maskman"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/u233"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_u233"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

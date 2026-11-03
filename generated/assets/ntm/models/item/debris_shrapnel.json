@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/debris_shrapnel"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/yellowcake"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_yellowcake"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/sat_head_mapper",
+    "type": "minecraft:model"
+  }
+}

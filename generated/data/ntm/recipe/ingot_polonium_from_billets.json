@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_polonium",
+    "ntm:billet_polonium",
+    "ntm:billet_polonium"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_polonium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

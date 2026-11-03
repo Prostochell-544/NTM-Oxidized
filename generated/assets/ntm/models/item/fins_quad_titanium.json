@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/fins_quad_titanium"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/circuit_vacuum_tube",
+    "type": "minecraft:model"
+  }
+}

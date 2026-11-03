@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/chopper_torso"
+  },
+  "parent": "minecraft:item/generated"
+}

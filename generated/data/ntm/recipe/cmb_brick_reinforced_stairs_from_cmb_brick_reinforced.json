@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:cmb_brick_reinforced"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:cmb_brick_reinforced_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

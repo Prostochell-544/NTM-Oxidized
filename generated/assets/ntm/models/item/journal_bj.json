@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/journal_bj"
+  },
+  "parent": "minecraft:item/generated"
+}

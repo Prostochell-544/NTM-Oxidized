@@ -1,0 +1,19 @@
+{
+  "title": "itemGroup.ntm.missiles",
+  "icon": "ntm:struct_launcher",
+  "items": [
+    "ntm:struct_launcher",
+    "ntm:struct_scaffold",
+    "ntm:missile_lambda",
+    "ntm:missile_skin_camo",
+    "ntm:missile_skin_desert",
+    "ntm:missile_skin_flames",
+    "ntm:missile_skin_manly_pink",
+    "ntm:missile_skin_metal",
+    "ntm:missile_skin_orange_insulation",
+    "ntm:missile_skin_sleek",
+    "ntm:missile_skin_soviet_glory",
+    "ntm:missile_skin_soviet_stank",
+    "ntm:missile_soyuz_lander"
+  ]
+}

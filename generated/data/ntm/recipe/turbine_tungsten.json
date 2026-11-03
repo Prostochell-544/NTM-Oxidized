@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "ntm:blade_tungsten",
+    "S": "#c:ingots/dura_steel"
+  },
+  "pattern": [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "result": {
+    "id": "ntm:turbine_tungsten"
+  },
+  "type": "minecraft:crafting_shaped"
+}

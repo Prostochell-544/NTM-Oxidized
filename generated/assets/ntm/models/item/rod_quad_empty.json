@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/rod_quad_empty"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/moon_turf"
+  },
+  "parent": "minecraft:block/cube_all"
+}

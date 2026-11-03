@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/pellet_cluster"
+  },
+  "parent": "minecraft:item/generated"
+}

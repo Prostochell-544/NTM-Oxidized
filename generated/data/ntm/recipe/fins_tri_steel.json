@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "#c:storage_blocks/steel",
+    "I": "#c:ingots/steel",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    " PI",
+    "IIB",
+    " PI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:fins_tri_steel"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:oak_door",
+  "properties": {
+    "hardness": 10.0,
+    "explosion_resistance": 6.0
+  }
+}

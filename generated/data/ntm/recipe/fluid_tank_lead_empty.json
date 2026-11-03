@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "L": "#c:plates/lead",
+    "T": "ntm:fluid_tank_empty",
+    "U": "#c:billets/u238"
+  },
+  "pattern": [
+    "LUL",
+    "LTL",
+    "LUL"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:fluid_tank_lead_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

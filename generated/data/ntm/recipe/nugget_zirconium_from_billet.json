@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_zirconium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_zirconium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,25 @@
+{
+  "values": [
+    "#c:storage_blocks/lead",
+    "ntm:block_lead",
+    "ntm:glass_lead",
+    "ntm:reinforced_stone",
+    "ntm:reinforced_stone_stairs",
+    "ntm:reinforced_brick",
+    "ntm:reinforced_brick_stairs",
+    "ntm:reinforced_ducrete",
+    "ntm:reinforced_glass",
+    "ntm:reinforced_glass_pane",
+    "ntm:reinforced_laminate",
+    "ntm:reinforced_laminate_pane",
+    "ntm:cmb_brick",
+    "ntm:cmb_brick_reinforced",
+    "ntm:cmb_brick_reinforced_stairs",
+    "ntm:ducrete",
+    "ntm:ducrete_smooth",
+    "ntm:ducrete_stairs",
+    "ntm:ducrete_smooth_stairs",
+    "ntm:brick_ducrete",
+    "ntm:brick_ducrete_stairs"
+  ]
+}

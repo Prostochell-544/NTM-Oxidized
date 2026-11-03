@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/rune_jera"
+  },
+  "parent": "minecraft:item/generated"
+}

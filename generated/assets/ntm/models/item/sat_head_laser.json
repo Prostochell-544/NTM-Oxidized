@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/sat_head_laser"
+  },
+  "parent": "minecraft:item/generated"
+}

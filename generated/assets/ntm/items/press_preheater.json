@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/press_preheater",
+    "type": "minecraft:model"
+  }
+}

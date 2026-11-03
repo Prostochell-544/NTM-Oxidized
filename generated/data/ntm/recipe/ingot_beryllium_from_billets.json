@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_beryllium",
+    "ntm:billet_beryllium",
+    "ntm:billet_beryllium"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_beryllium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

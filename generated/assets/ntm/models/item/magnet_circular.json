@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/magnet_circular"
+  },
+  "parent": "minecraft:item/generated"
+}

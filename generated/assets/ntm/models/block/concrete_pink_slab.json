@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ntm:block/concrete_pink",
+    "top": "ntm:block/concrete_pink",
+    "side": "ntm:block/concrete_pink"
+  }
+}

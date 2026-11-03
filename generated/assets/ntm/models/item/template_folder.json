@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/template_folder"
+  },
+  "parent": "minecraft:item/generated"
+}

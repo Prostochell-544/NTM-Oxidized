@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:particle_empty",
+    "#c:dusts/copper",
+    "ntm:pellet_charged"
+  ],
+  "result": {
+    "id": "ntm:particle_copper"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/fluid_tank_empty",
+    "type": "minecraft:model"
+  }
+}

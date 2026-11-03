@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/billet_u233"
+  },
+  "parent": "minecraft:item/generated"
+}

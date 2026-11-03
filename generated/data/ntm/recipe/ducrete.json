@@ -1,0 +1,15 @@
+{
+  "category": "building",
+  "key": {
+    "D": "ntm:ducrete_smooth"
+  },
+  "pattern": [
+    "DD",
+    "DD"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:ducrete"
+  },
+  "type": "minecraft:crafting_shaped"
+}

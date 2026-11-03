@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/plutonium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_plutonium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2,
+  "ingredient": "ntm:ore_deepslate_cobalt",
+  "result": {
+    "id": "ntm:ingot_cobalt"
+  },
+  "type": "minecraft:blasting"
+}

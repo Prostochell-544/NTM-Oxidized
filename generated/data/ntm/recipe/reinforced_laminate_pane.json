@@ -1,0 +1,15 @@
+{
+  "category": "building",
+  "key": {
+    "L": "ntm:reinforced_laminate"
+  },
+  "pattern": [
+    "LLL",
+    "LLL"
+  ],
+  "result": {
+    "count": 16,
+    "id": "ntm:reinforced_laminate_pane"
+  },
+  "type": "minecraft:crafting_shaped"
+}

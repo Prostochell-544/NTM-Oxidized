@@ -1,0 +1,17 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:brick_concrete",
+    "F": "minecraft:iron_bars"
+  },
+  "pattern": [
+    "FBF",
+    "BFB",
+    "FBF"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:reinforced_brick"
+  },
+  "type": "minecraft:crafting_shaped"
+}

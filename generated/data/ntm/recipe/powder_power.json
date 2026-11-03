@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glowstone_dust",
+    "#c:dusts/diamond",
+    "#c:dusts/magnetized_tungsten"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:powder_power"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

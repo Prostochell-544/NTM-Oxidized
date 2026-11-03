@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "#c:ingots/firebrick",
+    "I": "#c:ingots/iron"
+  },
+  "pattern": [
+    " B ",
+    "BIB",
+    " B "
+  ],
+  "result": {
+    "id": "ntm:mold_base"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ntm:block/watz_cooler_top",
+    "side": "ntm:block/watz_cooler_side"
+  }
+}

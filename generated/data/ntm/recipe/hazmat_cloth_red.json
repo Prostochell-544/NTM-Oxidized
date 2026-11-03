@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "ntm:hazmat_cloth",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    "C",
+    "R",
+    "C"
+  ],
+  "result": {
+    "id": "ntm:hazmat_cloth_red"
+  },
+  "type": "minecraft:crafting_shaped"
+}

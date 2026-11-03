@@ -1,0 +1,14 @@
+{
+  "category": "building",
+  "key": {
+    "W": "ntm:pink_log"
+  },
+  "pattern": [
+    "W"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:pink_planks"
+  },
+  "type": "minecraft:crafting_shaped"
+}

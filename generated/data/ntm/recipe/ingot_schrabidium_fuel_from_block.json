@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/schrabidium_fuel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_schrabidium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

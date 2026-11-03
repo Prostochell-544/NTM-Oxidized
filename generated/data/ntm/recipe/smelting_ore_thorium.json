@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 3,
+  "ingredient": "ntm:ore_thorium",
+  "result": {
+    "id": "ntm:ingot_th232"
+  },
+  "type": "minecraft:smelting"
+}

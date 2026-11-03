@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/stone_gneiss"
+  },
+  "parent": "minecraft:block/cube_all"
+}

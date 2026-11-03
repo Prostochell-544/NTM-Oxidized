@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/white_phosphorus"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_phosphorus"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

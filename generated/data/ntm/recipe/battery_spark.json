@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "D": "#c:plates/dineutronium",
+    "S": "#c:dusts/spark_mix",
+    "W": "ntm:wire_dense_magnetized_tungsten"
+  },
+  "pattern": [
+    " W ",
+    "DSD",
+    "DSD"
+  ],
+  "result": {
+    "id": "ntm:battery_spark"
+  },
+  "type": "minecraft:crafting_shaped"
+}

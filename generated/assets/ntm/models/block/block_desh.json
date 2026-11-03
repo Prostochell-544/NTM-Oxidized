@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/block_desh"
+  },
+  "parent": "minecraft:block/cube_all"
+}

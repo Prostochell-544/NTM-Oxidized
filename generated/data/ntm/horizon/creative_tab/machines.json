@@ -1,0 +1,15 @@
+{
+  "title": "itemGroup.ntm.machines",
+  "icon": "ntm:cm_flux",
+  "items": [
+    "ntm:cm_flux",
+    "ntm:cm_heat",
+    "ntm:fusion_hatch",
+    "ntm:fusion_heater",
+    "ntm:machine_transformer",
+    "ntm:press_preheater",
+    "ntm:seal_frame",
+    "ntm:watz_cooler",
+    "ntm:watz_element"
+  ]
+}

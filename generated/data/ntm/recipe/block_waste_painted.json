@@ -1,0 +1,11 @@
+{
+  "category": "building",
+  "ingredients": [
+    "#c:dyes/yellow",
+    "#c:storage_blocks/waste"
+  ],
+  "result": {
+    "id": "ntm:block_waste_painted"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

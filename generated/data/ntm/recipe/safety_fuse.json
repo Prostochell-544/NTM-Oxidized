@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "G": "minecraft:gunpowder",
+    "S": "minecraft:string"
+  },
+  "pattern": [
+    "SSS",
+    "SGS",
+    "SSS"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:safety_fuse"
+  },
+  "type": "minecraft:crafting_shaped"
+}

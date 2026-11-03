@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/niobium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_niobium_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

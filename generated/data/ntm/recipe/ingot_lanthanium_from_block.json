@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/lanthanium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_lanthanium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/ore_bedrock_oil",
+    "type": "minecraft:model"
+  }
+}

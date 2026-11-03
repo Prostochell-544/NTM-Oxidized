@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/coltan"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:fragment_coltan"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

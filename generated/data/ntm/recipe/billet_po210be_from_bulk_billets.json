@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_polonium",
+    "ntm:billet_polonium",
+    "ntm:billet_polonium",
+    "ntm:billet_beryllium",
+    "ntm:billet_beryllium",
+    "ntm:billet_beryllium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:billet_po210be"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

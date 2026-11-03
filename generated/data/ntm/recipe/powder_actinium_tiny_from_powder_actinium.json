@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/actinium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_actinium_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

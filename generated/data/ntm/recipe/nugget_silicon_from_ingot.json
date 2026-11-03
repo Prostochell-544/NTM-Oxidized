@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/silicon"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_silicon"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

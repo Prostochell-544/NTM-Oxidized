@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "M": "ntm:meteor_polished",
+    "S": "#c:storage_blocks/starmetal",
+    "W": "ntm:wire_schrabidium"
+  },
+  "pattern": [
+    "MSM",
+    "MWM",
+    "MSM"
+  ],
+  "result": {
+    "id": "ntm:meteor_battery"
+  },
+  "type": "minecraft:crafting_shaped"
+}

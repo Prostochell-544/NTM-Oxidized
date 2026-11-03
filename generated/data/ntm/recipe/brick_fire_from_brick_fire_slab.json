@@ -1,0 +1,11 @@
+{
+  "category": "building",
+  "ingredients": [
+    "ntm:brick_fire_slab",
+    "ntm:brick_fire_slab"
+  ],
+  "result": {
+    "id": "ntm:brick_fire"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

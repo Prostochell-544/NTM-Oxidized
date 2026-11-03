@@ -1,0 +1,10 @@
+{
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "ingredient": "ntm:sand_lead",
+  "result": {
+    "id": "ntm:glass_lead"
+  },
+  "type": "minecraft:smelting"
+}

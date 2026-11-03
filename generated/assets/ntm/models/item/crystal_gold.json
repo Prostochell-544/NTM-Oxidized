@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/crystal_gold"
+  },
+  "parent": "minecraft:item/generated"
+}

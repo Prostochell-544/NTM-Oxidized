@@ -1,0 +1,14 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:brick_fire"
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:brick_fire_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,7 @@
+{
+  "textures": {
+    "top": "ntm:block/door_red_upper",
+    "bottom": "ntm:block/door_red_lower"
+  },
+  "parent": "minecraft:block/door_bottom_right"
+}

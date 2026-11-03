@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_solinium",
+    "ntm:billet_solinium",
+    "ntm:billet_solinium"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_solinium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

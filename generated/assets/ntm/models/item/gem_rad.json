@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/gem_rad"
+  },
+  "parent": "minecraft:item/generated"
+}

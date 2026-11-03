@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/schrabidium_fuel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_schrabidium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

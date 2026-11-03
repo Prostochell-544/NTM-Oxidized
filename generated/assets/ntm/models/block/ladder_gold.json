@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ladder",
+  "textures": {
+    "particle": "ntm:block/ladder_gold",
+    "texture": "ntm:block/ladder_gold"
+  }
+}

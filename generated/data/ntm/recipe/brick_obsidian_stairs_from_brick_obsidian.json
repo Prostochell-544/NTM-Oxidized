@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:brick_obsidian"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:brick_obsidian_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

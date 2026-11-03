@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_am241",
+    "ntm:billet_am242",
+    "ntm:billet_am242"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:billet_am_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

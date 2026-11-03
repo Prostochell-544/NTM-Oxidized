@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:nuggets/zirconium",
+    "#c:nuggets/zirconium",
+    "#c:nuggets/zirconium",
+    "#c:nuggets/pu241",
+    "#c:nuggets/pu241",
+    "#c:nuggets/am_mix"
+  ],
+  "result": {
+    "id": "ntm:billet_zfb_am_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

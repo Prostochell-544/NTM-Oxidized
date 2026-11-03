@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "ntm:bolt_tungsten",
+    "I": "#c:ingots/tungsten",
+    "P": "#c:ingots/rubber"
+  },
+  "pattern": [
+    "BIB",
+    "P P",
+    "B B"
+  ],
+  "result": {
+    "id": "ntm:reacher"
+  },
+  "type": "minecraft:crafting_shaped"
+}

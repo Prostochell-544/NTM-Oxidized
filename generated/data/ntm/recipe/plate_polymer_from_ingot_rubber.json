@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "D": "#c:ingots/rubber"
+  },
+  "pattern": [
+    "DD"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:plate_polymer"
+  },
+  "type": "minecraft:crafting_shaped"
+}

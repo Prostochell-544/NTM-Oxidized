@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/solinium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_solinium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

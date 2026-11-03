@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/lanthanium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_lanthanium_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

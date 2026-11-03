@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:nuggets/pu238",
+    "#c:nuggets/pu238",
+    "#c:nuggets/pu238",
+    "#c:nuggets/beryllium",
+    "#c:nuggets/beryllium",
+    "#c:nuggets/beryllium"
+  ],
+  "result": {
+    "id": "ntm:billet_pu238be"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

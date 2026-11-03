@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "G": "#c:glass_panes",
+    "I": "#c:plates/polymer",
+    "W": "ntm:wire_tungsten"
+  },
+  "pattern": [
+    "G",
+    "W",
+    "I"
+  ],
+  "result": {
+    "id": "ntm:circuit_vacuum_tube"
+  },
+  "type": "minecraft:crafting_shaped"
+}

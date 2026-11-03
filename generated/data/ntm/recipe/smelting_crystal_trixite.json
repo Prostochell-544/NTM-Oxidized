@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredient": "ntm:crystal_trixite",
+  "result": {
+    "count": 4,
+    "id": "ntm:ingot_plutonium"
+  },
+  "type": "minecraft:smelting"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/block_corium"
+  },
+  "parent": "minecraft:block/cube_all"
+}

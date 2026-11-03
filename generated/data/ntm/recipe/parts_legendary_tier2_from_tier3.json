@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:parts_legendary_tier3"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:parts_legendary_tier2"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

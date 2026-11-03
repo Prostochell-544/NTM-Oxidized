@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "ntm:block/block_euphemium_cluster"
+    },
+    "axis=z": {
+      "model": "ntm:block/block_euphemium_cluster",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "ntm:block/block_euphemium_cluster",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

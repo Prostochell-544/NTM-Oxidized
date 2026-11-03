@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/warhead_cluster_medium"
+  },
+  "parent": "minecraft:item/generated"
+}

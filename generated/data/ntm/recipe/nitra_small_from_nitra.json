@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:nitra"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:nitra_small"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

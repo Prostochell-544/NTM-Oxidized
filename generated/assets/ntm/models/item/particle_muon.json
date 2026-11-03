@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/particle_muon"
+  },
+  "parent": "minecraft:item/generated"
+}

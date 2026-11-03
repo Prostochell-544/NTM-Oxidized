@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_lanthanium_tiny"
+  },
+  "parent": "minecraft:item/generated"
+}

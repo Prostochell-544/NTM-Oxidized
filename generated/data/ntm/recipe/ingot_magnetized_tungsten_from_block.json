@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/magnetized_tungsten"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_magnetized_tungsten"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

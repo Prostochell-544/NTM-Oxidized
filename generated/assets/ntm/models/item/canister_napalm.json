@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/canister_napalm"
+  },
+  "parent": "minecraft:item/generated"
+}

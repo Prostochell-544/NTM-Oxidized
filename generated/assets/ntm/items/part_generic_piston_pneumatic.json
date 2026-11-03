@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/part_generic_piston_pneumatic",
+    "type": "minecraft:model"
+  }
+}

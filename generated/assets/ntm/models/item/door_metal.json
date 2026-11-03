@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/door_metal"
+  },
+  "parent": "minecraft:item/generated"
+}

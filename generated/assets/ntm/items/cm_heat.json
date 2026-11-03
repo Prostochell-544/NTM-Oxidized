@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/cm_heat",
+    "type": "minecraft:model"
+  }
+}

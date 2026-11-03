@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ntm:block/cmb_brick_reinforced",
+    "top": "ntm:block/cmb_brick_reinforced",
+    "side": "ntm:block/cmb_brick_reinforced"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/desh",
+    "#c:dusts/euphemium",
+    "ntm:powder_power"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:powder_spark_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/particle_tachyon"
+  },
+  "parent": "minecraft:item/generated"
+}

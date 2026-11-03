@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/actinium",
+  "result": {
+    "id": "ntm:ingot_actinium"
+  },
+  "type": "minecraft:smelting"
+}

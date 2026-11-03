@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/demon_core_closed"
+  },
+  "parent": "minecraft:item/generated"
+}

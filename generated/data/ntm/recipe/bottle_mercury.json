@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "minecraft:glass_bottle",
+    "M": "ntm:nugget_mercury"
+  },
+  "pattern": [
+    "MMM",
+    "MBM",
+    "MMM"
+  ],
+  "result": {
+    "id": "ntm:bottle_mercury"
+  },
+  "type": "minecraft:crafting_shaped"
+}

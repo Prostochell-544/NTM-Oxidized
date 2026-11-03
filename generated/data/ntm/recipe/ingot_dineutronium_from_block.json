@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/dineutronium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_dineutronium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

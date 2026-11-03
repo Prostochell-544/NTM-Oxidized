@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/sr90",
+  "result": {
+    "id": "ntm:ingot_sr90"
+  },
+  "type": "minecraft:smelting"
+}

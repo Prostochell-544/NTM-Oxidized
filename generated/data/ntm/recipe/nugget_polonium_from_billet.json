@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_polonium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_polonium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

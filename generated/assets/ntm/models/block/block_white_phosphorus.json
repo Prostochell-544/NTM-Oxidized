@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/block_white_phosphorus"
+  },
+  "parent": "minecraft:block/cube_all"
+}

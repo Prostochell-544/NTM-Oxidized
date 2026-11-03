@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/rune_hagalaz"
+  },
+  "parent": "minecraft:item/generated"
+}

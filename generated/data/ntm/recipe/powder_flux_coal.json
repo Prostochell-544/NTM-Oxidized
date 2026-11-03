@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "minecraft:coal",
+    "#c:sands"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:powder_flux"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

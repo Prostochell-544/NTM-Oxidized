@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_zirconium",
+    "ntm:billet_zirconium",
+    "ntm:billet_zirconium",
+    "ntm:billet_pu241",
+    "ntm:billet_pu241",
+    "ntm:billet_am_mix"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:billet_zfb_am_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

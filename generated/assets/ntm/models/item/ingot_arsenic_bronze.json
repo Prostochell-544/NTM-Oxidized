@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/ingot_arsenic_bronze"
+  },
+  "parent": "minecraft:item/generated"
+}

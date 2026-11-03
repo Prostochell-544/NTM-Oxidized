@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ntm:block/brick_concrete_broken",
+    "top": "ntm:block/brick_concrete_broken",
+    "side": "ntm:block/brick_concrete_broken"
+  }
+}

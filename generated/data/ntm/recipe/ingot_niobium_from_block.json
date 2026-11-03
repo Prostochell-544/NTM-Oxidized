@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/niobium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_niobium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/calcium",
+    "#c:sands"
+  ],
+  "result": {
+    "count": 12,
+    "id": "ntm:powder_flux"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

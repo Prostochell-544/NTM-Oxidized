@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_actinium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_actinium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

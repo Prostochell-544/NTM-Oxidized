@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/pu241"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_pu241"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_paleogenite"
+  },
+  "parent": "minecraft:item/generated"
+}

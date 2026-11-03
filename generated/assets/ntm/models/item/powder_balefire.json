@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_balefire"
+  },
+  "parent": "minecraft:item/generated"
+}

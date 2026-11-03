@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "S": "#c:plates/steel",
+    "T": "#c:plates/titanium"
+  },
+  "pattern": [
+    "STS",
+    "S S",
+    "STS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:tank_steel"
+  },
+  "type": "minecraft:crafting_shaped"
+}

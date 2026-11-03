@@ -1,0 +1,28 @@
+{
+  "title": "itemGroup.ntm.consumables",
+  "icon": "ntm:bottle2_empty",
+  "items": [
+    "ntm:bottle2_empty",
+    "ntm:bottle_empty",
+    "ntm:can_empty",
+    "ntm:can_key",
+    "ntm:cap_fritz",
+    "ntm:cap_korl",
+    "ntm:cap_nuka",
+    "ntm:cap_quantum",
+    "ntm:cap_rad",
+    "ntm:cap_sparkle",
+    "ntm:coin_creeper",
+    "ntm:coin_maskman",
+    "ntm:coin_radiation",
+    "ntm:coin_token",
+    "ntm:coin_ufo",
+    "ntm:coin_worm",
+    "ntm:egg_glyphid",
+    "ntm:pin",
+    "ntm:ring_pull",
+    "ntm:syringe_empty",
+    "ntm:syringe_metal_empty",
+    "ntm:watch"
+  ]
+}

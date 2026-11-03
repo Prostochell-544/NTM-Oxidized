@@ -1,0 +1,15 @@
+{
+  "category": "building",
+  "key": {
+    "C": "ntm:concrete_smooth"
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:concrete"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredient": "ntm:crystal_rare",
+  "result": {
+    "count": 1,
+    "id": "ntm:powder_desh_mix"
+  },
+  "type": "minecraft:smelting"
+}

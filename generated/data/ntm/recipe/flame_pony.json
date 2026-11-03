@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "D": "#c:dyes/pink",
+    "O": "#c:dyes/yellow",
+    "P": "minecraft:paper"
+  },
+  "pattern": [
+    " O ",
+    "DPD",
+    " O "
+  ],
+  "result": {
+    "id": "ntm:flame_pony"
+  },
+  "type": "minecraft:crafting_shaped"
+}

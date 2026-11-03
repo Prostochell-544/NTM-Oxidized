@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/steel",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    "IP",
+    "PP",
+    "IP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:fins_flat"
+  },
+  "type": "minecraft:crafting_shaped"
+}

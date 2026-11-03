@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "ntm:bolt_steel",
+    "P": "#c:plates/iron"
+  },
+  "pattern": [
+    "BPB",
+    "BPB",
+    "BPB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:plate_cast_iron"
+  },
+  "type": "minecraft:crafting_shaped"
+}

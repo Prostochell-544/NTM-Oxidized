@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/fluorite",
+    "#c:sands"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:powder_flux"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ntm:plate_aluminium",
+    {
+      "id": "immersiveengineering:plate_aluminum",
+      "required": false
+    }
+  ]
+}

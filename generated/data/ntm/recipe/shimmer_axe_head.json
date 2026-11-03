@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "#c:storage_blocks/desh",
+    "I": "#c:ingots/tungsten",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    "PII",
+    "PBB",
+    "PII"
+  ],
+  "result": {
+    "id": "ntm:shimmer_axe_head"
+  },
+  "type": "minecraft:crafting_shaped"
+}

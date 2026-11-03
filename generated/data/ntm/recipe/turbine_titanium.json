@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "ntm:blade_titanium",
+    "S": "#c:ingots/steel"
+  },
+  "pattern": [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "result": {
+    "id": "ntm:turbine_titanium"
+  },
+  "type": "minecraft:crafting_shaped"
+}

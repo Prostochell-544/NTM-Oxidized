@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/cobalt"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_cobalt_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

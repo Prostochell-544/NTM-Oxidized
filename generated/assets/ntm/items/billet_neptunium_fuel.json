@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/billet_neptunium_fuel",
+    "type": "minecraft:model"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "category": "building",
+  "key": {
+    "B": "minecraft:glass",
+    "F": "minecraft:iron_bars"
+  },
+  "pattern": [
+    "FBF",
+    "BFB",
+    "FBF"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:reinforced_glass"
+  },
+  "type": "minecraft:crafting_shaped"
+}

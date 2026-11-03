@@ -1,0 +1,19 @@
+{
+  "category": "building",
+  "ingredients": [
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:dusts/lead"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:sand_lead"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

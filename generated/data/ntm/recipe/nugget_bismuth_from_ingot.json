@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/bismuth"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_bismuth"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

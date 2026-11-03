@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 128,
+  "ingredient": "ntm:ore_nether_schrabidium",
+  "result": {
+    "id": "ntm:ingot_schrabidium"
+  },
+  "type": "minecraft:smelting"
+}

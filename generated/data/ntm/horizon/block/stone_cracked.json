@@ -1,0 +1,6 @@
+{
+  "template": "minecraft:stone",
+  "properties": {
+    "hardness": 5.0
+  }
+}

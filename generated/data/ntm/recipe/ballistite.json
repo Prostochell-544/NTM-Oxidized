@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gunpowder",
+    "#c:dusts/niter",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:ballistite"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

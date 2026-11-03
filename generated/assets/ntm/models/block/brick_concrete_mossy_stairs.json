@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ntm:block/brick_concrete_mossy",
+    "top": "ntm:block/brick_concrete_mossy",
+    "side": "ntm:block/brick_concrete_mossy"
+  }
+}

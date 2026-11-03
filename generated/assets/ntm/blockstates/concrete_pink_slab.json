@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ntm:block/concrete_pink_slab"
+    },
+    "type=top": {
+      "model": "ntm:block/concrete_pink_slab_top"
+    },
+    "type=double": {
+      "model": "ntm:block/concrete_pink_slab_double"
+    }
+  }
+}

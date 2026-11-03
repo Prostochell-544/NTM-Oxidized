@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ntm:block/ladder_sturdy"
+    },
+    "facing=east": {
+      "model": "ntm:block/ladder_sturdy",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ntm:block/ladder_sturdy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ntm:block/ladder_sturdy",
+      "y": 270
+    }
+  }
+}

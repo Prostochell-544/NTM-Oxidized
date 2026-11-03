@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_gh336",
+    "ntm:billet_gh336",
+    "ntm:billet_gh336"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_gh336"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

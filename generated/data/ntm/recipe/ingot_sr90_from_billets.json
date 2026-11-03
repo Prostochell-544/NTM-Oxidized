@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_sr90",
+    "ntm:billet_sr90",
+    "ntm:billet_sr90"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_sr90"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

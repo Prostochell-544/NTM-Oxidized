@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/drill_pipe"
+  },
+  "parent": "minecraft:block/cube_all"
+}

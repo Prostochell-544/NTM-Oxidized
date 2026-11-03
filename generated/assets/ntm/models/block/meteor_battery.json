@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "ntm:block/meteor_spawner_side",
+    "end": "ntm:block/meteor_power",
+    "particle": "ntm:block/meteor_spawner_side"
+  }
+}

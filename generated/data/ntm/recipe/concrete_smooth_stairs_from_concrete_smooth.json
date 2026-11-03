@@ -1,0 +1,16 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:concrete_smooth"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:concrete_smooth_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

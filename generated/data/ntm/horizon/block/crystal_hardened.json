@@ -1,0 +1,6 @@
+{
+  "template": "minecraft:iron_block",
+  "properties": {
+    "hardness": 15.0
+  }
+}

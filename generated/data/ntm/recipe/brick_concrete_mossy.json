@@ -1,0 +1,17 @@
+{
+  "category": "building",
+  "key": {
+    "C": "ntm:brick_concrete",
+    "V": "minecraft:vine"
+  },
+  "pattern": [
+    "CCC",
+    "CVC",
+    "CCC"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:brick_concrete_mossy"
+  },
+  "type": "minecraft:crafting_shaped"
+}

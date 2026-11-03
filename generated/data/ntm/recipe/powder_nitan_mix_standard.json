@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/neptunium",
+    "#c:dusts/iron",
+    "#c:dusts/th232",
+    "#c:dusts/astatine",
+    "#c:dusts/neodymium",
+    "#c:dusts/caesium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:powder_nitan_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

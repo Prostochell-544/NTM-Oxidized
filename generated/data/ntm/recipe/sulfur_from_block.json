@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/sulfur"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:sulfur"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

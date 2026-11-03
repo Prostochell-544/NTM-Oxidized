@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/ball_tatb"
+  },
+  "parent": "minecraft:item/generated"
+}

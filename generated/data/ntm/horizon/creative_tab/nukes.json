@@ -1,0 +1,22 @@
+{
+  "title": "itemGroup.ntm.nukes",
+  "icon": "ntm:battery_spark",
+  "items": [
+    "ntm:battery_spark",
+    "ntm:battery_trixite",
+    "ntm:custom_amat",
+    "ntm:custom_dirty",
+    "ntm:custom_euph",
+    "ntm:custom_fall",
+    "ntm:custom_hydro",
+    "ntm:custom_nuke",
+    "ntm:custom_schrab",
+    "ntm:custom_tnt",
+    "ntm:demon_core_closed",
+    "ntm:egg_balefire",
+    "ntm:egg_balefire_shard",
+    "ntm:gadget_explosive",
+    "ntm:igniter",
+    "ntm:man_explosive"
+  ]
+}

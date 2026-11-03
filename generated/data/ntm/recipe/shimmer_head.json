@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "D": "#c:storage_blocks/desh",
+    "S": "#c:ingots/steel",
+    "T": "#c:storage_blocks/tungsten"
+  },
+  "pattern": [
+    "SSS",
+    "DTD",
+    "SSS"
+  ],
+  "result": {
+    "id": "ntm:shimmer_head"
+  },
+  "type": "minecraft:crafting_shaped"
+}

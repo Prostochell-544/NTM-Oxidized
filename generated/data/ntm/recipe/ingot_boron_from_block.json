@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/boron"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_boron"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

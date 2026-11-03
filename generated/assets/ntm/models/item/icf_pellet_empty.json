@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/icf_pellet_empty"
+  },
+  "parent": "minecraft:item/generated"
+}

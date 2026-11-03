@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "L": "#c:plates/lead",
+    "S": "#c:plates/steel"
+  },
+  "pattern": [
+    "SSS",
+    "L L",
+    "SSS"
+  ],
+  "result": {
+    "count": 16,
+    "id": "ntm:rod_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

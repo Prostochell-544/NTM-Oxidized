@@ -1,0 +1,17 @@
+{
+  "category": "building",
+  "key": {
+    "B": "minecraft:bricks",
+    "F": "minecraft:oak_fence"
+  },
+  "pattern": [
+    "FBF",
+    "BFB",
+    "FBF"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:brick_light"
+  },
+  "type": "minecraft:crafting_shaped"
+}

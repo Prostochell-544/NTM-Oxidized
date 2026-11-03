@@ -1,0 +1,18 @@
+{
+  "category": "building",
+  "key": {
+    "B": "ntm:reinforced_brick",
+    "F": "ntm:bolt_steel",
+    "T": "#c:tars"
+  },
+  "pattern": [
+    "FBF",
+    "BTB",
+    "FBF"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:brick_compound"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "#c:ingots/bismoid",
+    "C": "#c:dusts/cobalt",
+    "P": "#c:ingots/hard_plastic"
+  },
+  "pattern": [
+    "PCP",
+    "PBP",
+    "PCP"
+  ],
+  "result": {
+    "id": "ntm:catalytic_converter"
+  },
+  "type": "minecraft:crafting_shaped"
+}

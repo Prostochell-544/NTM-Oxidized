@@ -1,0 +1,15 @@
+{
+  "category": "building",
+  "key": {
+    "C": "ntm:meteor_polished"
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:meteor_brick"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/rubber"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_rubber"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

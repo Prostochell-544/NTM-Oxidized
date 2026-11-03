@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/zirconium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_zirconium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

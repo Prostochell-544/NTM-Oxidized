@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_ra226",
+    "ntm:billet_ra226",
+    "ntm:billet_ra226",
+    "ntm:billet_beryllium",
+    "ntm:billet_beryllium",
+    "ntm:billet_beryllium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:billet_ra226be"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/combine_steel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_combine_steel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

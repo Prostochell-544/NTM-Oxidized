@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/nitra_small"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/ingot_euphemium"
+  },
+  "parent": "minecraft:item/generated"
+}

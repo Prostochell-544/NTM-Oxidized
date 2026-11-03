@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "M": "ntm:bottle_mercury"
+  },
+  "pattern": [
+    "M"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:nugget_mercury"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "P": "ntm:pipe_steel",
+    "S": "#c:ingots/steel"
+  },
+  "pattern": [
+    "SSS",
+    "P P",
+    "SSS"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:oil_pipe"
+  },
+  "type": "minecraft:crafting_shaped"
+}

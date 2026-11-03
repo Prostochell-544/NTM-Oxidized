@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/icf_pellet_depleted",
+    "type": "minecraft:model"
+  }
+}

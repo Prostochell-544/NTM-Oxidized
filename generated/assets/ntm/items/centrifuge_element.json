@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/centrifuge_element",
+    "type": "minecraft:model"
+  }
+}

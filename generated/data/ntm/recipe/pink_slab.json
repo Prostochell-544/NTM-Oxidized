@@ -1,0 +1,14 @@
+{
+  "category": "building",
+  "key": {
+    "W": "ntm:pink_planks"
+  },
+  "pattern": [
+    "WWW"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:pink_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:oak_log",
+  "properties": {
+    "hardness": 5.0,
+    "explosion_resistance": 6.0
+  }
+}

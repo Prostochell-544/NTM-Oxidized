@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/uranium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_uranium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

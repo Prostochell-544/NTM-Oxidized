@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ntm:block/fusion_hatch",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "ntm:block/fusion_hatch",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ntm:block/fusion_hatch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ntm:block/fusion_hatch",
+      "y": 270
+    }
+  }
+}

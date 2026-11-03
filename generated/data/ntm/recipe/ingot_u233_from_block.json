@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/u233"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_u233"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

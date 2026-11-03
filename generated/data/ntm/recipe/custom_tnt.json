@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "#c:plates/copper",
+    "I": "#c:plates/iron",
+    "T": "#c:ingots/high_explosive"
+  },
+  "pattern": [
+    " C ",
+    "TIT",
+    "TIT"
+  ],
+  "result": {
+    "id": "ntm:custom_tnt"
+  },
+  "type": "minecraft:crafting_shaped"
+}

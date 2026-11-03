@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:nuggets/am241",
+    "#c:nuggets/am241",
+    "#c:nuggets/am242",
+    "#c:nuggets/am242",
+    "#c:nuggets/am242",
+    "#c:nuggets/am242"
+  ],
+  "result": {
+    "id": "ntm:billet_am_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

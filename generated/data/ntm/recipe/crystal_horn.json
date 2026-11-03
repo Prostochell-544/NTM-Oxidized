@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/neptunium",
+    "#c:dusts/iodine",
+    "#c:dusts/th232",
+    "#c:dusts/astatine",
+    "#c:dusts/neodymium",
+    "#c:dusts/caesium",
+    "ntm:block_meteor",
+    "ntm:gravel_obsidian",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "id": "ntm:crystal_horn"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/americium_fuel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_americium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

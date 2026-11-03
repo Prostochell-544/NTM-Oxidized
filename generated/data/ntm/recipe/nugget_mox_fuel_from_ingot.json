@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/mox_fuel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_mox_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

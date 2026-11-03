@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:nuggets/pu239",
+    "#c:nuggets/pu239",
+    "#c:nuggets/pu239",
+    "#c:nuggets/pu239",
+    "#c:nuggets/pu240",
+    "#c:nuggets/pu240"
+  ],
+  "result": {
+    "id": "ntm:billet_pu_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

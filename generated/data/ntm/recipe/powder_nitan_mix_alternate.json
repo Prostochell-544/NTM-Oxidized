@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/strontium",
+    "#c:dusts/cobalt",
+    "#c:dusts/bromine",
+    "#c:dusts/tennessine",
+    "#c:dusts/niobium",
+    "#c:dusts/cerium"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:powder_nitan_mix"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

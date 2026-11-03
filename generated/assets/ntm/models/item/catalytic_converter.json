@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/catalytic_converter"
+  },
+  "parent": "minecraft:item/generated"
+}

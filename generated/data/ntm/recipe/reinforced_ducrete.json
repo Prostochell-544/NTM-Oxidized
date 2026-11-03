@@ -1,0 +1,18 @@
+{
+  "category": "building",
+  "key": {
+    "D": "ntm:brick_ducrete",
+    "S": "#c:plates/steel",
+    "U": "ntm:billet_u238"
+  },
+  "pattern": [
+    "DSD",
+    "SUS",
+    "DSD"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:reinforced_ducrete"
+  },
+  "type": "minecraft:crafting_shaped"
+}

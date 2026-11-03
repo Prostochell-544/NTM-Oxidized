@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "ntm:reactor_core",
+    "N": "ntm:neutron_reflector",
+    "Z": "#c:plates/cast_zirconium"
+  },
+  "pattern": [
+    "NNN",
+    "ZCZ",
+    "NNN"
+  ],
+  "result": {
+    "id": "ntm:cm_flux"
+  },
+  "type": "minecraft:crafting_shaped"
+}

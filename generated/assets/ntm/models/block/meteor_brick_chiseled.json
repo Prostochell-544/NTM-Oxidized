@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/meteor_brick_chiseled"
+  },
+  "parent": "minecraft:block/cube_all"
+}

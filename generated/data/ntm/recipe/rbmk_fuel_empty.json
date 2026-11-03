@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "R": "ntm:rod_quad_empty",
+    "Z": "#c:ingots/zirconium"
+  },
+  "pattern": [
+    "ZRZ",
+    "Z Z",
+    "ZRZ"
+  ],
+  "result": {
+    "id": "ntm:rbmk_fuel_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

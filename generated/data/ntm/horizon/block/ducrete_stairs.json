@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:stone_stairs",
+  "properties": {
+    "hardness": 20.0,
+    "explosion_resistance": 216.0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "key": {
+    "W": "ntm:wire_copper"
+  },
+  "pattern": [
+    "W ",
+    " W",
+    " W"
+  ],
+  "result": {
+    "id": "ntm:pin"
+  },
+  "type": "minecraft:crafting_shaped"
+}

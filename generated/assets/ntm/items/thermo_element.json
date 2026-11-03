@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/thermo_element",
+    "type": "minecraft:model"
+  }
+}

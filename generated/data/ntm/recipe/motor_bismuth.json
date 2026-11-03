@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "#c:nuggets/bismuth",
+    "C": "ntm:wire_dense_neodymium",
+    "D": "#c:ingots/dura_steel",
+    "S": "ntm:plate_cast_steel"
+  },
+  "pattern": [
+    "BCB",
+    "SDS",
+    "BCB"
+  ],
+  "result": {
+    "id": "ntm:motor_bismuth"
+  },
+  "type": "minecraft:crafting_shaped"
+}

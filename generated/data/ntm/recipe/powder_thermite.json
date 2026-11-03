@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/iron",
+    "#c:dusts/iron",
+    "#c:dusts/iron",
+    "#c:dusts/aluminium"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:powder_thermite"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

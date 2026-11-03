@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_plutonium_fuel",
+    "ntm:billet_plutonium_fuel",
+    "ntm:billet_plutonium_fuel"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_plutonium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

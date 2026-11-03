@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 5,
+  "ingredient": "ntm:ore_gneiss_lithium",
+  "result": {
+    "id": "ntm:lithium"
+  },
+  "type": "minecraft:smelting"
+}

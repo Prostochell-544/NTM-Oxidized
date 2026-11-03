@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/dura_steel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_dura_steel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

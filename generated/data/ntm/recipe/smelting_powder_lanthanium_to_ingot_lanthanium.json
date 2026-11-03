@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/lanthanium",
+  "result": {
+    "id": "ntm:ingot_lanthanium"
+  },
+  "type": "minecraft:smelting"
+}

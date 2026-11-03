@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/neptunium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_neptunium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

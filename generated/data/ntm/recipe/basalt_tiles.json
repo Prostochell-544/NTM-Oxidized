@@ -1,0 +1,15 @@
+{
+  "category": "building",
+  "key": {
+    "C": "ntm:basalt_brick"
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:basalt_tiles"
+  },
+  "type": "minecraft:crafting_shaped"
+}

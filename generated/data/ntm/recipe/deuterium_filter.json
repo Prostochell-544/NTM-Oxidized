@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "ntm:catalyst_clay",
+    "S": "#c:dusts/sulfur",
+    "T": "#c:ingots/resistant_alloy"
+  },
+  "pattern": [
+    "TST",
+    "SCS",
+    "TST"
+  ],
+  "result": {
+    "id": "ntm:deuterium_filter"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/ingot_reiium"
+  },
+  "parent": "minecraft:item/generated"
+}

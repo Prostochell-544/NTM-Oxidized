@@ -1,0 +1,10 @@
+{
+  "category": "building",
+  "ingredients": [
+    "ntm:gneiss_tile"
+  ],
+  "result": {
+    "id": "ntm:gneiss_chiseled"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

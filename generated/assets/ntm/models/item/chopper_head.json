@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/chopper_head"
+  },
+  "parent": "minecraft:item/generated"
+}

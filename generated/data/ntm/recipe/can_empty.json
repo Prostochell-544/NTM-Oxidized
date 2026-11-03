@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "P": "#c:plates/aluminium"
+  },
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "result": {
+    "id": "ntm:can_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

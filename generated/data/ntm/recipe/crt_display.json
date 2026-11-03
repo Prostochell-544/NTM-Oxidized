@@ -1,0 +1,19 @@
+{
+  "category": "misc",
+  "key": {
+    "A": "#c:dusts/aluminium",
+    "G": "#c:glass_panes",
+    "S": "#c:plates/steel",
+    "T": "ntm:circuit_vacuum_tube"
+  },
+  "pattern": [
+    " A ",
+    "SGS",
+    " T "
+  ],
+  "result": {
+    "count": 4,
+    "id": "ntm:crt_display"
+  },
+  "type": "minecraft:crafting_shaped"
+}

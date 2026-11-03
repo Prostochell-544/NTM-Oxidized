@@ -1,0 +1,17 @@
+{
+  "category": "building",
+  "key": {
+    "#": "#minecraft:planks",
+    "L": "minecraft:ladder"
+  },
+  "pattern": [
+    "LLL",
+    "L#L",
+    "LLL"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:ladder_sturdy"
+  },
+  "type": "minecraft:crafting_shaped"
+}

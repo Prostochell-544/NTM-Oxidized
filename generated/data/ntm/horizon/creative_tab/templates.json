@@ -1,0 +1,10 @@
+{
+  "title": "itemGroup.ntm.templates",
+  "icon": "ntm:journal_bj",
+  "items": [
+    "ntm:journal_bj",
+    "ntm:journal_pip",
+    "ntm:journal_silver",
+    "ntm:template_folder"
+  ]
+}

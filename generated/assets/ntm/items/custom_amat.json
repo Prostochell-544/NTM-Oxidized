@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/custom_amat",
+    "type": "minecraft:model"
+  }
+}

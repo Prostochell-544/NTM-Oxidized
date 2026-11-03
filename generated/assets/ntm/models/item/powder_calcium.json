@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/powder_calcium"
+  },
+  "parent": "minecraft:item/generated"
+}

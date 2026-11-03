@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/launch_code_piece"
+  },
+  "parent": "minecraft:item/generated"
+}

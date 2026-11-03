@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:white_wool",
+  "properties": {
+    "hardness": 15.0,
+    "explosion_resistance": 30.0
+  }
+}

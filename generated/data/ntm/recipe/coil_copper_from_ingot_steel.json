@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/steel",
+    "W": "ntm:wire_red_copper"
+  },
+  "pattern": [
+    "WWW",
+    "WIW",
+    "WWW"
+  ],
+  "result": {
+    "id": "ntm:coil_copper"
+  },
+  "type": "minecraft:crafting_shaped"
+}

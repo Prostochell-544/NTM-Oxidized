@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ntm:concrete",
+    "ntm:brick_concrete",
+    "ntm:brick_concrete_mossy",
+    "ntm:brick_concrete_cracked",
+    "ntm:brick_concrete_broken"
+  ]
+}

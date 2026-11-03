@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/ra226",
+  "result": {
+    "id": "ntm:ingot_ra226"
+  },
+  "type": "minecraft:smelting"
+}

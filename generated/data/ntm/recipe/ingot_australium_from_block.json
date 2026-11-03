@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/australium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_australium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/coil_gold_torus"
+  },
+  "parent": "minecraft:item/generated"
+}

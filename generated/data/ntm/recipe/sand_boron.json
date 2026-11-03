@@ -1,0 +1,19 @@
+{
+  "category": "building",
+  "ingredients": [
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:sands",
+    "#c:dusts/boron"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ntm:sand_boron"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

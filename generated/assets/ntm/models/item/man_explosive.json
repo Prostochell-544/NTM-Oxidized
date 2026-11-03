@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/man_explosive"
+  },
+  "parent": "minecraft:item/generated"
+}

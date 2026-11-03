@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/lithium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_lithium_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "ntm:hazmat_cloth_red",
+    "I": "#c:ingots/rubber",
+    "L": "#c:plates/lead",
+    "P": "#c:plates/iron"
+  },
+  "pattern": [
+    " P ",
+    "ICI",
+    " L "
+  ],
+  "result": {
+    "id": "ntm:hazmat_cloth_grey"
+  },
+  "type": "minecraft:crafting_shaped"
+}

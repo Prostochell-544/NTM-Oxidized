@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "X": "ntm:nitra_small"
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "id": "ntm:nitra"
+  },
+  "type": "minecraft:crafting_shaped"
+}

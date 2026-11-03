@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/block_euphemium"
+  },
+  "parent": "minecraft:block/cube_all"
+}

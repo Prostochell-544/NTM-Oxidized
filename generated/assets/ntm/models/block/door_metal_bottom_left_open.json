@@ -1,0 +1,7 @@
+{
+  "textures": {
+    "top": "ntm:block/door_metal_upper",
+    "bottom": "ntm:block/door_metal_lower"
+  },
+  "parent": "minecraft:block/door_bottom_left_open"
+}

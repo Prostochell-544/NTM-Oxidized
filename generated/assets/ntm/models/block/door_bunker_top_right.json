@@ -1,0 +1,7 @@
+{
+  "textures": {
+    "top": "ntm:block/door_bunker_upper",
+    "bottom": "ntm:block/door_bunker_lower"
+  },
+  "parent": "minecraft:block/door_top_right"
+}

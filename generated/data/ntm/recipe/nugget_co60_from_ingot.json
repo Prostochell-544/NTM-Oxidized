@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/co60"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_co60"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

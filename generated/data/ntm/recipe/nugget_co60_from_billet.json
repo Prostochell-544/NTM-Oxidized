@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_co60"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ntm:nugget_co60"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/bismuth"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_bismuth"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

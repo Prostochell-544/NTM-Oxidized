@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "ntm:block/block_tritium"
+    },
+    "axis=z": {
+      "model": "ntm:block/block_tritium",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "ntm:block/block_tritium",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

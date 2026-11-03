@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "#c:plates/copper",
+    "L": "#c:plates/lead",
+    "U": "#c:ingots/schrabidium"
+  },
+  "pattern": [
+    " C ",
+    "LUL",
+    "LUL"
+  ],
+  "result": {
+    "id": "ntm:custom_schrab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

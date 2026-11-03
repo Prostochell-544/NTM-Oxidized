@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:nuggets/schrabidium",
+    "#c:nuggets/schrabidium",
+    "#c:nuggets/neptunium",
+    "#c:nuggets/neptunium",
+    "#c:nuggets/beryllium",
+    "#c:nuggets/beryllium"
+  ],
+  "result": {
+    "id": "ntm:billet_schrabidium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

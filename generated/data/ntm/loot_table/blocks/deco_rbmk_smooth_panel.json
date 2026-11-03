@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ntm:blocks/deco_rbmk_smooth_panel",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ntm:deco_rbmk_smooth_panel"
+        }
+      ]
+    }
+  ]
+}

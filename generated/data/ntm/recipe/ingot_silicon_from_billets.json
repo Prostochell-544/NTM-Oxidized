@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_silicon",
+    "ntm:billet_silicon",
+    "ntm:billet_silicon"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_silicon"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

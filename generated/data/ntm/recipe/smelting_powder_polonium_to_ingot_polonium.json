@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": "#c:dusts/polonium",
+  "result": {
+    "id": "ntm:ingot_polonium"
+  },
+  "type": "minecraft:smelting"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/paleogenite"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_paleogenite_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

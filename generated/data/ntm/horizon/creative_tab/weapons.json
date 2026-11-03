@@ -1,0 +1,12 @@
+{
+  "title": "itemGroup.ntm.weapons",
+  "icon": "ntm:ammo_dgk",
+  "items": [
+    "ntm:ammo_dgk",
+    "ntm:disperser_canister_empty",
+    "ntm:glyphid_gland_empty",
+    "ntm:stick_c4",
+    "ntm:stick_semtex",
+    "ntm:stick_tnt"
+  ]
+}

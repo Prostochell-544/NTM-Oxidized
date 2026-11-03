@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ntm:block/block_schrabidium_cluster_top",
+    "side": "ntm:block/block_schrabidium_cluster_side"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "1": "#c:plates/steel",
+    "2": "#c:plates/aluminium",
+    "G": "#c:glass_panes"
+  },
+  "pattern": [
+    "121",
+    "1G1",
+    "121"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:fluid_barrel_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

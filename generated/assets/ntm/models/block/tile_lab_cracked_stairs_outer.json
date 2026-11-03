@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ntm:block/tile_lab_cracked",
+    "top": "ntm:block/tile_lab_cracked",
+    "side": "ntm:block/tile_lab_cracked"
+  }
+}

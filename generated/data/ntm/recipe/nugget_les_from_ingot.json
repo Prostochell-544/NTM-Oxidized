@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/les"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_les"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/cs137"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_cs137_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

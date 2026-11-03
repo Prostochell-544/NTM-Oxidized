@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/block_combine_steel"
+  },
+  "parent": "minecraft:block/cube_all"
+}

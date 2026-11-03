@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/polonium"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_polonium"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

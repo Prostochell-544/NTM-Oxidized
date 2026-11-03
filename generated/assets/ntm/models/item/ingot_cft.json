@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/ingot_cft"
+  },
+  "parent": "minecraft:item/generated"
+}

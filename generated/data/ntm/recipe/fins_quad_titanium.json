@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/titanium",
+    "P": "#c:plates/titanium"
+  },
+  "pattern": [
+    " PP",
+    "III",
+    " PP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ntm:fins_quad_titanium"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "G": "#c:glass_panes",
+    "S": "ntm:plate_cast_lead",
+    "T": "ntm:coil_gold"
+  },
+  "pattern": [
+    "STS",
+    "G G",
+    "STS"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:particle_empty"
+  },
+  "type": "minecraft:crafting_shaped"
+}

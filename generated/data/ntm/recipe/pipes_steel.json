@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "#c:storage_blocks/steel"
+  },
+  "pattern": [
+    "B",
+    "B",
+    "B"
+  ],
+  "result": {
+    "id": "ntm:pipe_steel"
+  },
+  "type": "minecraft:crafting_shaped"
+}

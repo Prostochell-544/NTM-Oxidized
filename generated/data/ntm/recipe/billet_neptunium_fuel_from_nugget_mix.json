@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:nuggets/neptunium",
+    "#c:nuggets/neptunium",
+    "#c:nuggets/u238",
+    "#c:nuggets/u238",
+    "#c:nuggets/u238",
+    "#c:nuggets/u238"
+  ],
+  "result": {
+    "id": "ntm:billet_neptunium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

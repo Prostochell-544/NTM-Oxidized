@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "#c:ingots/copper",
+    "P": "ntm:plate_polymer"
+  },
+  "pattern": [
+    "PCP",
+    "PCP",
+    "PCP"
+  ],
+  "result": {
+    "id": "ntm:cm_heat"
+  },
+  "type": "minecraft:crafting_shaped"
+}

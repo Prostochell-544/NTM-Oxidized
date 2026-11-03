@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredient": "ntm:crystal_aluminium",
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_aluminium"
+  },
+  "type": "minecraft:smelting"
+}

@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 20,
+  "ingredient": "ntm:ore_coltan",
+  "result": {
+    "id": "ntm:fragment_coltan"
+  },
+  "type": "minecraft:blasting"
+}

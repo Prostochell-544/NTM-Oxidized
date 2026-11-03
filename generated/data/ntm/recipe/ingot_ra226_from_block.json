@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/ra226"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_ra226"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

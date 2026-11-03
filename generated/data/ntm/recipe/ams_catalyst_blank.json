@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "key": {
+    "E": "#c:ingots/euphemium",
+    "T": "#c:dusts/tennessine"
+  },
+  "pattern": [
+    "TET",
+    "ETE",
+    "TET"
+  ],
+  "result": {
+    "id": "ntm:ams_catalyst_blank"
+  },
+  "type": "minecraft:crafting_shaped"
+}

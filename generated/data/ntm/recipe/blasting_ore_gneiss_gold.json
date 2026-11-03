@@ -1,0 +1,10 @@
+{
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2.5,
+  "ingredient": "ntm:ore_gneiss_gold",
+  "result": {
+    "id": "minecraft:gold_ingot"
+  },
+  "type": "minecraft:blasting"
+}

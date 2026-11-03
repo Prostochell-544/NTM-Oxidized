@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/arsenic"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:nugget_arsenic"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

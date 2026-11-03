@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/boron"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_boron_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

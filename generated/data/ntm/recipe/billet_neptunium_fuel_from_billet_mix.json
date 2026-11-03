@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_u238",
+    "ntm:billet_u238",
+    "ntm:billet_neptunium"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ntm:billet_neptunium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "ntm:block/reinforced_light"
+  },
+  "parent": "minecraft:block/cube_all"
+}

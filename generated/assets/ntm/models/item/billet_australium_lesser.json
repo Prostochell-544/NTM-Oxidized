@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/billet_australium_lesser"
+  },
+  "parent": "minecraft:item/generated"
+}

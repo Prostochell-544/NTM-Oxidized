@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:particle_empty",
+    "#c:dusts/lead",
+    "ntm:pellet_charged"
+  ],
+  "result": {
+    "id": "ntm:particle_lead"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

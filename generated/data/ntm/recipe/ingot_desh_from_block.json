@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/desh"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:ingot_desh"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

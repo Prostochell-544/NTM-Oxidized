@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ladder",
+  "textures": {
+    "particle": "ntm:block/ladder_sturdy",
+    "texture": "ntm:block/ladder_sturdy"
+  }
+}

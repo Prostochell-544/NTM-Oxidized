@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/rod_zirnox_tritium"
+  },
+  "parent": "minecraft:item/generated"
+}

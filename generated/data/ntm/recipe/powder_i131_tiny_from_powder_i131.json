@@ -1,0 +1,11 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "#c:dusts/i131"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ntm:powder_i131_tiny"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

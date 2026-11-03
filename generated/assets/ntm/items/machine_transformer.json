@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "ntm:item/machine_transformer",
+    "type": "minecraft:model"
+  }
+}

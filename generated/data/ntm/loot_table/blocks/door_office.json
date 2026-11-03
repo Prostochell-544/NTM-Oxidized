@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "condition": {
+        "terms": [
+          {
+            "block": "ntm:door_office",
+            "properties": {
+              "half": "lower"
+            },
+            "type": "minecraft:block_state_property"
+          },
+          {
+            "type": "minecraft:survives_explosion"
+          }
+        ],
+        "type": "minecraft:all_of"
+      },
+      "entries": [
+        {
+          "name": "ntm:door_office",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:block"
+}

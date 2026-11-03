@@ -1,0 +1,13 @@
+{
+  "category": "misc",
+  "ingredients": [
+    "ntm:billet_thorium_fuel",
+    "ntm:billet_thorium_fuel",
+    "ntm:billet_thorium_fuel"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ntm:ingot_thorium_fuel"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

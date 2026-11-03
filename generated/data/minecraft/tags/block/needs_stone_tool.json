@@ -1,0 +1,16 @@
+{
+  "values": [
+    "ntm:ore_sulfur",
+    "ntm:ore_deepslate_sulfur",
+    "ntm:ore_niter",
+    "ntm:ore_deepslate_niter",
+    "ntm:ore_aluminium",
+    "ntm:ore_deepslate_aluminium",
+    "ntm:ore_fluorite",
+    "ntm:ore_deepslate_fluorite",
+    "ntm:ore_asbestos",
+    "ntm:ore_deepslate_asbestos",
+    "ntm:ore_cinnabar",
+    "ntm:ore_deepslate_cinnabar"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ntm:block/tile_lab_cracked_slab"
+    },
+    "type=top": {
+      "model": "ntm:block/tile_lab_cracked_slab_top"
+    },
+    "type=double": {
+      "model": "ntm:block/tile_lab_cracked_slab_double"
+    }
+  }
+}

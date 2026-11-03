@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:ladder",
+  "properties": {
+    "hardness": 0.25,
+    "explosion_resistance": 1.2
+  }
+}
