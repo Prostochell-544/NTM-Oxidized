@@ -1,0 +1,10 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#c:ingots/iron",
+  "input_b": "#c:sands",
+  "input_a_count": 2,
+  "result": {
+    "id": "ntm:ingot_steel",
+    "count": 2
+  }
+}

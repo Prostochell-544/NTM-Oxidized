@@ -108,6 +108,8 @@
     "ntm:concrete_smooth",
     "ntm:concrete_smooth_stairs",
     "ntm:concrete_stairs",
+    "ntm:machine_battery_socket",
+    "ntm:machine_press",
     "ntm:machine_shredder",
     "ntm:machine_transformer",
     "ntm:machine_wood_burner",

@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/copper",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_copper",
+    "count": 8
+  }
+}

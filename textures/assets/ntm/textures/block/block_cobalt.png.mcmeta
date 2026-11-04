@@ -3,7 +3,7 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/block_cobalt_ctm"
+			"ntm:block/block_cobalt_ctm"
 		]
 	}
 }

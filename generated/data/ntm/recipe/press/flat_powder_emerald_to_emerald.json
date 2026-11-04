@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:dusts/emerald",
+  "stamp": "flat",
+  "result": {
+    "id": "minecraft:emerald"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/stamp_stone_circuit"
+  },
+  "parent": "minecraft:item/generated"
+}

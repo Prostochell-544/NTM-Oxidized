@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/lead",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_lead",
+    "count": 8
+  }
+}

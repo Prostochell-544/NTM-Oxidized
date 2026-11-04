@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/gold",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_gold",
+    "count": 8
+  }
+}

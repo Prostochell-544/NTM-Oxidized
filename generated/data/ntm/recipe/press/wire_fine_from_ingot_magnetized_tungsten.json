@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/magnetized_tungsten",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_magnetized_tungsten",
+    "count": 8
+  }
+}

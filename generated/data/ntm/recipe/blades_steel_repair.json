@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "ntm:blades_steel",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    "PIP"
+  ],
+  "result": {
+    "id": "ntm:blades_steel"
+  },
+  "type": "minecraft:crafting_shaped"
+}

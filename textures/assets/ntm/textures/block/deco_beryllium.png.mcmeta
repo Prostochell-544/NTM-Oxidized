@@ -3,7 +3,7 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/deco_beryllium_ctm"
+			"ntm:block/deco_beryllium_ctm"
 		]
 	}
 }

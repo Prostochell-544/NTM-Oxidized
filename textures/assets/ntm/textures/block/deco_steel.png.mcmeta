@@ -3,12 +3,12 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/deco_steel_ctm"
+			"ntm:block/deco_steel_ctm"
 		],
         "extra": {
             "connect_to": [
-                { "block": "reinhardtshbm:deco_rusty_steel" },
-                { "block": "reinhardtshbm:deco_steel" }
+                { "block": "ntm:deco_rusty_steel" },
+                { "block": "ntm:deco_steel" }
             ]
         }
 	}

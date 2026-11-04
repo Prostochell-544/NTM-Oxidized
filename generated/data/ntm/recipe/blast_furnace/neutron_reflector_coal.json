@@ -1,0 +1,9 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#ntm:blast_furnace/tungsten_equivalent",
+  "input_b": "#ntm:blast_furnace/coal_equivalent",
+  "result": {
+    "id": "ntm:neutron_reflector",
+    "count": 2
+  }
+}

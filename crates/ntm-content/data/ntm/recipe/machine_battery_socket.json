@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "I I",
+    "I I",
+    "IRI"
+  ],
+  "key": {
+    "I": "#c:plates/polymer",
+    "R": "ntm:coil_copper"
+  },
+  "result": {
+    "id": "ntm:machine_battery_socket"
+  }
+}

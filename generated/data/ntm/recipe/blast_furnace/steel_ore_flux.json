@@ -1,0 +1,9 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#c:ores/iron",
+  "input_b": "ntm:powder_flux",
+  "result": {
+    "id": "ntm:ingot_steel",
+    "count": 3
+  }
+}

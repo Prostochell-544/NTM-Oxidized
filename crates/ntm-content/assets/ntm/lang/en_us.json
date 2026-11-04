@@ -25,5 +25,21 @@
   "item.ntm.powder_copper": "Copper Powder",
   "item.ntm.powder_iron": "Iron Powder",
   "item.ntm.powder_sawdust": "Sawdust",
-  "item.ntm.scrap": "Scrap"
+  "item.ntm.scrap": "Scrap",
+  "block.ntm.machine_battery_socket": "Battery Socket",
+  "item.ntm.battery_pack_battery_redstone": "Redstone Battery",
+  "item.ntm.battery_pack_battery_lead": "Lead-Acid Battery",
+  "item.ntm.battery_pack_battery_lithium": "Lithium-Ion Battery",
+  "item.ntm.battery_pack_battery_sodium": "Sodium-Iron Battery",
+  "item.ntm.battery_pack_battery_schrabidium": "Schrabidium Battery",
+  "item.ntm.battery_pack_battery_quantum": "Quantum Battery",
+  "item.ntm.battery_pack_capacitor_copper": "Copper Capacitor",
+  "item.ntm.battery_pack_capacitor_gold": "Gold Capacitor",
+  "item.ntm.battery_pack_capacitor_niobium": "Niobium Capacitor",
+  "item.ntm.battery_pack_capacitor_tantalum": "Tantalum Capacitor",
+  "item.ntm.battery_pack_capacitor_bismuth": "Bismuth Capacitor",
+  "item.ntm.battery_pack_capacitor_spark": "Spark Capacitor",
+  "block.ntm.machine_difurnace_off": "Blast Furnace",
+  "block.ntm.machine_difurnace_ext": "Blast Furnace Extension",
+  "block.ntm.machine_press": "Burner Press"
 }

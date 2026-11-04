@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/schrabidium",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_schrabidium",
+    "count": 8
+  }
+}

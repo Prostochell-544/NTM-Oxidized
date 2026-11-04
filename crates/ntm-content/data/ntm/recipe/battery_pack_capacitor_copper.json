@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "PRP",
+    "IRI"
+  ],
+  "key": {
+    "I": "#c:plates/steel",
+    "P": "#c:plates/polymer",
+    "R": "#c:storage_blocks/copper"
+  },
+  "result": {
+    "id": "ntm:battery_pack_capacitor_copper"
+  }
+}

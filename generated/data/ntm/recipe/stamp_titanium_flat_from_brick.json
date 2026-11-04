@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "minecraft:brick",
+    "S": "#c:ingots/titanium"
+  },
+  "pattern": [
+    "III",
+    "SSS"
+  ],
+  "result": {
+    "id": "ntm:stamp_titanium_flat"
+  },
+  "type": "minecraft:crafting_shaped"
+}

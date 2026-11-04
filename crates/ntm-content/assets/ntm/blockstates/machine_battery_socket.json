@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,lit=false": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=north,lit=true": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=east,lit=false": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=east,lit=true": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=south,lit=false": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=south,lit=true": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=west,lit=false": {
+      "model": "ntm:block/machine_battery_socket"
+    },
+    "facing=west,lit=true": {
+      "model": "ntm:block/machine_battery_socket"
+    }
+  }
+}

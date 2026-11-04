@@ -1,0 +1,8 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#ntm:blast_furnace/tungsten_equivalent",
+  "input_b": "#c:nuggets/schrabidium",
+  "result": {
+    "id": "ntm:ingot_magnetized_tungsten"
+  }
+}

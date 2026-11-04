@@ -164,6 +164,8 @@
     "ntm:ladder_titanium",
     "ntm:lightstone_bricks_stairs",
     "ntm:lightstone_tile_stairs",
+    "ntm:machine_battery_socket",
+    "ntm:machine_press",
     "ntm:machine_shredder",
     "ntm:machine_transformer",
     "ntm:machine_wood_burner",

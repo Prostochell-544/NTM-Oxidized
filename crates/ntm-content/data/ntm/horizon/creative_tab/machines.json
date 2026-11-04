@@ -4,7 +4,11 @@
   "items": [
     "ntm:red_cable",
     "ntm:machine_wood_burner",
+    "ntm:machine_difurnace_off",
+    "ntm:machine_difurnace_ext",
+    "ntm:machine_press",
     "ntm:machine_shredder",
+    "ntm:machine_battery_socket",
     "ntm:power_net_tool",
     "ntm:blades_steel",
     "ntm:blades_titanium"

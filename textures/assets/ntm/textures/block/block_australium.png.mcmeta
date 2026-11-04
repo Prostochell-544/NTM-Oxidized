@@ -3,7 +3,7 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/block_australium_ctm"
+			"ntm:block/block_australium_ctm"
 		]
 	}
 }

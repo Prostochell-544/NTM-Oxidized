@@ -1,0 +1,10 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#c:ores/copper",
+  "input_b": "#c:dusts/redstone",
+  "input_b_count": 6,
+  "result": {
+    "id": "ntm:ingot_red_copper",
+    "count": 6
+  }
+}

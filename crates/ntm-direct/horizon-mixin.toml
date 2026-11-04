@@ -121,6 +121,22 @@ helper = "screen_draw.rs"
 bindings = [{ name = "game", ty = "&Game<'_>", value = "&*self" }, { name = "block", ty = "&str", value = "block" }, { name = "data", ty = "&[i32]", value = "data" }, { name = "batch", ty = "&mut HudBatch", value = "batch" }, { name = "origin", ty = "[f32; 2]", value = "origin" }]
 
 [[injection]]
+id = "screen_click"
+hook = "screen_click"
+hook_version = 1
+kind = "HEAD"
+helper = "screen_click.rs"
+bindings = [{ name = "block", ty = "&str", value = "block" }, { name = "at", ty = "[f32; 2]", value = "at" }, { name = "button", ty = "&mut Option<i32>", value = "button" }]
+
+[[injection]]
+id = "menu_button"
+hook = "menu_button"
+hook_version = 1
+kind = "HEAD"
+helper = "menu_button.rs"
+bindings = [{ name = "entity", ty = "&mut ModBlockEntity", value = "entity" }, { name = "id", ty = "i32", value = "id" }]
+
+[[injection]]
 id = "screen_tooltip"
 hook = "screen_tooltip"
 hook_version = 1

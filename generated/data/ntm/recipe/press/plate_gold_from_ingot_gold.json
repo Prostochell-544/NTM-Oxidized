@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/gold",
+  "stamp": "plate",
+  "result": {
+    "id": "ntm:plate_gold"
+  }
+}

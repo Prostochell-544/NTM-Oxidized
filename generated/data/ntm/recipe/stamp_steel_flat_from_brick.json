@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "minecraft:brick",
+    "S": "#c:ingots/steel"
+  },
+  "pattern": [
+    "III",
+    "SSS"
+  ],
+  "result": {
+    "id": "ntm:stamp_steel_flat"
+  },
+  "type": "minecraft:crafting_shaped"
+}

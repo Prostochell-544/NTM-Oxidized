@@ -1,0 +1,8 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#c:ingots/gold",
+  "input_b": "ntm:plate_mixed",
+  "result": {
+    "id": "ntm:plate_paa"
+  }
+}

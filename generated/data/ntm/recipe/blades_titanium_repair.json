@@ -1,0 +1,14 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "ntm:blades_titanium",
+    "P": "#c:plates/titanium"
+  },
+  "pattern": [
+    "PIP"
+  ],
+  "result": {
+    "id": "ntm:blades_titanium"
+  },
+  "type": "minecraft:crafting_shaped"
+}

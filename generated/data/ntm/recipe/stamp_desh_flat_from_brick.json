@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "B": "minecraft:brick",
+    "D": "#c:ingots/desh",
+    "S": "#c:ingots/ferrouranium"
+  },
+  "pattern": [
+    "BDB",
+    "DSD",
+    "BDB"
+  ],
+  "result": {
+    "id": "ntm:stamp_desh_flat"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,15 @@
+{
+  "category": "misc",
+  "key": {
+    "I": "minecraft:nether_brick",
+    "S": "minecraft:obsidian"
+  },
+  "pattern": [
+    "III",
+    "SSS"
+  ],
+  "result": {
+    "id": "ntm:stamp_obsidian_flat"
+  },
+  "type": "minecraft:crafting_shaped"
+}

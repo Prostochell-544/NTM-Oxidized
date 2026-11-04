@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/zirconium",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_zirconium",
+    "count": 8
+  }
+}

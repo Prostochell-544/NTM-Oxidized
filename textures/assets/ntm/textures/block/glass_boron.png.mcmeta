@@ -3,7 +3,7 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/glass_boron_ctm"
+			"ntm:block/glass_boron_ctm"
 		]
 	}
 }

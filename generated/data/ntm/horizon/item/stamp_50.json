@@ -1,0 +1,7 @@
+{
+  "template": "minecraft:iron_nugget",
+  "max_stack_size": 1,
+  "components": {
+    "minecraft:max_damage": 1000
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:plates/gunmetal",
+  "stamp": "c9",
+  "result": {
+    "id": "ntm:casing_small",
+    "count": 4
+  }
+}

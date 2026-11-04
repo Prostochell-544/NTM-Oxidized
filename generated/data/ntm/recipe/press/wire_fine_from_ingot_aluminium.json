@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/aluminium",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_aluminium",
+    "count": 8
+  }
+}

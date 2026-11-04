@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "ntm:item/stamp_desh_plate"
+  },
+  "parent": "minecraft:item/generated"
+}

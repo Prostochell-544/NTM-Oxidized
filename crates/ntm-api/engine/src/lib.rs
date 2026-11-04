@@ -1,29 +1,35 @@
 //! NTM through Horizon's public mod API only: the trait hooks and `Host`, no mixins. The logic is
-//! in `ntm_core`. Where the API has no way yet, a stub stands in, marked `API gap`.
+//! in `ntm_core`, and the machines of its registry (`machines::MACHINES`) all go through the same
+//! code here. Where the API has no way yet, a stub stands in, marked `API gap`.
 
 use horizon_client::mod_api::{
     AttachmentCodec, AttachmentError, AttachmentType, BlockEntityContainerEvent, BlockEntityEvent,
     BlockEntityTickEvent, BlockEntityTicksEvent, ChunkLoadEvent, ChunkUnloadEvent, Compound,
-    Flow, Holder, Hooks, Host, ItemStack, LevelTickPreEvent, MenuSlotRulesEvent, ModBlockEntity,
-    ModContainer, NativeScreen, ScreenDrawEvent, ScreenEvent, ScreenTooltipEvent,
-    ServerDataLoadedEvent, ServerTickEvent, Tag, Text, UseItemOnEvent, WorldLifecycleEvent,
-    WorldPhase,
+    Flow, Holder, Hooks, Host, ItemStack, LevelTickPreEvent, MenuButtonEvent, MenuSlotRulesEvent,
+    ModBlockEntity, ModContainer, NativeScreen, ScreenClickEvent, ScreenDrawEvent, ScreenEvent,
+    ScreenTooltipEvent, ServerDataLoadedEvent, ServerTickEvent, Tag, Text, UseItemOnEvent,
+    WorldLifecycleEvent, WorldPhase,
 };
-use ntm_core::energy::{EnergyHandlers, NodeId, Nodespace, Pos, Port, around};
-use ntm_core::machine::{FuelKind, RecipeCache, Shredder, ShredderRules, WoodBurner};
+use ntm_core::battery::{
+    self, Battery, BatteryPack, BatterySlot, ChargeLog, SOCKET_BLOCK, SOCKET_MENU, SOCKET_SCREEN,
+    StorageMode, StorageSettings,
+};
+use ntm_core::energy::{EnergyHandlers, NodeId, Nodespace, Pos, Port, Priority, around};
+use ntm_core::machines::screen::{self, Screen};
+use ntm_core::machines::{self, FuelKind, MachineWorld, Nbt, RecipeCaches, Role, WoodBurner};
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::sync::{Mutex, Once};
 
 const CABLE: &str = "ntm:red_cable";
 const WOOD_BURNER: &str = "ntm:machine_wood_burner";
-const SHREDDER: &str = "ntm:machine_shredder";
 const NET_TOOL: &str = "ntm:power_net_tool";
-const BLADES_PREFIX: &str = "ntm:blades_";
+const CUSTOM_DATA: &str = "minecraft:custom_data";
 const SCRAP: &str = "ntm:scrap";
 const SHREDDER_RECIPE: &str = "ntm:shredder";
-const SHREDDER_MENU: &str = "ntm:shredder";
-const SHREDDER_GUI: &str = "ntm:gui/gui_shredder";
+const BLAST_RECIPE: &str = "ntm:blast_furnace";
+const BLAST_FUEL: &str = "ntm:blast_furnace_fuel";
+const PRESS_RECIPE: &str = "ntm:press";
 const FUEL_SLOT: usize = 1;
 // The game's log keeps info lines only from targets starting with "horizon".
 const LOG: &str = "horizon_ntm_api";
@@ -41,6 +47,26 @@ static POWER: AttachmentType<i64> = AttachmentType {
             _ => Err(AttachmentError::Decode),
         },
     }),
+    copy_on_death: false,
+    sync: false,
+};
+
+/// What the network needs from a socket beside its power: the battery's capacity, the speeds its
+/// mode allows and its priority. API gap: the network can't read the battery in the socket, so
+/// the socket writes this each tick, unsaved, and keeps `POWER` as its battery's charge.
+#[derive(Clone, Copy, Debug, Default)]
+struct Storage {
+    max: i64,
+    receive: i64,
+    provide: i64,
+    priority: i32,
+}
+
+static STORAGE: AttachmentType<Storage> = AttachmentType {
+    namespace: "ntm",
+    name: "storage",
+    default: Storage::default,
+    codec: None,
     copy_on_death: false,
     sync: false,
 };
@@ -85,7 +111,7 @@ impl Level {
 #[derive(Default)]
 struct NtmHooks {
     levels: Mutex<HashMap<String, Level>>,
-    shredder_results: Mutex<RecipeCache<ItemStack>>,
+    recipes: Mutex<RecipeCaches<ItemStack>>,
 }
 
 impl NtmHooks {
@@ -96,10 +122,7 @@ impl NtmHooks {
 
     /// The recipes and tags were (re)built: what was found in them is stale.
     fn forget_recipes(&self) {
-        self.shredder_results
-            .lock()
-            .unwrap_or_else(|e| e.into_inner())
-            .clear();
+        self.recipes.lock().unwrap_or_else(|e| e.into_inner()).clear();
     }
 }
 
@@ -108,7 +131,51 @@ fn chunk_of(pos: Pos) -> [i32; 2] {
 }
 
 fn is_machine(block: &str) -> bool {
-    block == WOOD_BURNER || block == SHREDDER
+    block == WOOD_BURNER || block == SOCKET_BLOCK || machines::spec(block).is_some()
+}
+
+/// A battery pack as `IBatteryItem` sees it, its charge the long `charge` of its custom data, the
+/// NBT tag NTM keeps it in.
+fn pack_battery(stack: &ItemStack) -> Option<Battery> {
+    let pack = BatteryPack::from_name(stack.item.strip_prefix(machines::PACK_PREFIX)?)?;
+    let charge = stack
+        .extra
+        .as_ref()
+        .and_then(|data| data.other.iter().find(|(key, _)| key == CUSTOM_DATA))
+        .and_then(|(_, tag)| match tag {
+            Tag::Compound(data) => match data.get(&"charge".into()) {
+                Some(Tag::Long(charge)) => Some(*charge),
+                _ => None,
+            },
+            _ => None,
+        })
+        .unwrap_or(0);
+    Some(pack.battery(charge))
+}
+
+fn set_pack_charge(stack: &mut ItemStack, charge: i64) {
+    let other = &mut stack.extra.get_or_insert_with(Default::default).other;
+    match other.iter_mut().find(|(key, _)| key == CUSTOM_DATA) {
+        Some((_, Tag::Compound(data))) => {
+            data.insert("charge".into(), Tag::Long(charge));
+        }
+        Some((_, tag)) => *tag = Tag::Compound([("charge".into(), Tag::Long(charge))].into()),
+        None => {
+            // The components stay in key order.
+            let at = other.partition_point(|(key, _)| key.as_str() < CUSTOM_DATA);
+            other.insert(
+                at,
+                (CUSTOM_DATA.into(), Tag::Compound([("charge".into(), Tag::Long(charge))].into())),
+            );
+        }
+    }
+}
+
+fn long(nbt: &Compound, key: &str) -> i64 {
+    match nbt.get(&key.into()) {
+        Some(Tag::Long(n)) => *n,
+        _ => 0,
+    }
 }
 
 fn int(nbt: &Compound, key: &str) -> i32 {
@@ -118,11 +185,70 @@ fn int(nbt: &Compound, key: &str) -> i32 {
     }
 }
 
+fn socket_settings(nbt: &Compound) -> StorageSettings {
+    let get = |key: &str| match nbt.get(&key.into()) {
+        Some(Tag::Short(n)) => Some(i32::from(*n)),
+        Some(Tag::Byte(n)) => Some(i32::from(*n)),
+        _ => None,
+    };
+    let default = StorageSettings::default();
+    StorageSettings {
+        red_low: get("redLow").map_or(default.red_low, StorageMode::from_index),
+        red_high: get("redHigh").map_or(default.red_high, StorageMode::from_index),
+        priority: get("priority").map_or(default.priority, Priority::from_ordinal),
+    }
+    .checked()
+}
+
+fn put_socket_settings(nbt: &mut Compound, settings: StorageSettings) {
+    nbt.insert("redLow".into(), Tag::Short(settings.red_low.index() as i16));
+    nbt.insert("redHigh".into(), Tag::Short(settings.red_high.index() as i16));
+    nbt.insert("priority".into(), Tag::Byte(settings.priority.ordinal() as i8));
+}
+
+/// `TileEntityBatterySocket.updateEntity`, the network's part done. The network moved `POWER`;
+/// the battery takes what it moved since the last tick wrote it (`synced`), then `POWER` and
+/// `STORAGE` show the battery as it now is. A battery swapped between the two keeps the change.
+fn tick_socket(host: &mut dyn Host, pos: Pos, entity: &mut ModBlockEntity, mode: StorageMode) {
+    let settings = socket_settings(&entity.nbt);
+    put_socket_settings(&mut entity.nbt, settings);
+    let moved = power(host, pos).wrapping_sub(long(&entity.nbt, "synced"));
+    let mut battery = None;
+    if let Some(Some(stack)) = entity.items.first_mut()
+        && let Some(mut found) = pack_battery(stack)
+    {
+        found.charge = found.charge.wrapping_add(moved).clamp(0, found.max_charge);
+        set_pack_charge(stack, found.charge);
+        battery = Some(found);
+    }
+    let (charge, max) = battery.map_or((0, 0), |battery| (battery.charge, battery.max_charge));
+    set_power(host, pos, charge);
+    entity.nbt.insert("synced".into(), Tag::Long(charge));
+    let _ = STORAGE.set(
+        host,
+        Holder::BlockEntity(pos),
+        Storage {
+            max,
+            receive: battery::receiver_speed(mode, battery.as_ref()),
+            provide: battery::provider_speed(mode, battery.as_ref()),
+            priority: settings.priority.ordinal(),
+        },
+    );
+    let mut log = ChargeLog::default();
+    if let Some(Tag::LongArray(saved)) = entity.nbt.get(&"log".into())
+        && saved.len() == log.log.len()
+    {
+        log.log.copy_from_slice(saved);
+    }
+    let delta = log.push(charge, charge);
+    entity.nbt.insert("log".into(), Tag::LongArray(log.log.to_vec()));
+    entity.data = battery::socket_data(charge, max, delta, settings);
+}
+
 fn max_power_of(block: &str) -> i64 {
     match block {
         WOOD_BURNER => WoodBurner::MAX_POWER,
-        SHREDDER => Shredder::MAX_POWER,
-        _ => 0,
+        _ => machines::spec(block).map_or(0, |spec| spec.max_power),
     }
 }
 
@@ -147,11 +273,33 @@ impl EnergyHandlers<Pos> for Handlers<'_> {
     }
 
     fn max_power(&self, pos: Pos) -> i64 {
-        max_power_of(&self.0.borrow().block(pos))
+        self.storage(pos)
+            .map_or_else(|| max_power_of(&self.0.borrow().block(pos)), |storage| storage.max)
     }
 
     fn is_bad_link(&self, pos: Pos) -> bool {
         !is_machine(&self.0.borrow().block(pos))
+    }
+
+    fn receiver_speed(&self, pos: Pos) -> i64 {
+        self.storage(pos).map_or_else(|| self.max_power(pos), |storage| storage.receive)
+    }
+
+    fn provider_speed(&self, pos: Pos) -> i64 {
+        self.storage(pos).map_or_else(|| self.max_power(pos), |storage| storage.provide)
+    }
+
+    fn priority(&self, pos: Pos) -> Priority {
+        self.storage(pos).map_or(Priority::Normal, |storage| Priority::from_ordinal(storage.priority))
+    }
+}
+
+impl Handlers<'_> {
+    /// A socket's `STORAGE`, none for anything else.
+    fn storage(&self, pos: Pos) -> Option<Storage> {
+        let mut host = self.0.borrow_mut();
+        (host.block(pos) == SOCKET_BLOCK)
+            .then(|| STORAGE.get(*host, Holder::BlockEntity(pos)).unwrap_or_default())
     }
 }
 
@@ -203,6 +351,16 @@ fn fuel_burn_time(stack: &ItemStack) -> i32 {
     WoodBurner::burn_time_of(base_burn_time(&stack.item), kind)
 }
 
+/// API gap: no item data in `Host`, so no `crafting_remainder`. Vanilla's one fuel with one.
+fn remainder_of(item: &str) -> Option<ItemStack> {
+    (item == "minecraft:lava_bucket").then(|| ItemStack {
+        item: "minecraft:bucket".into(),
+        count: 1,
+        damage: 0,
+        extra: None,
+    })
+}
+
 fn tick_wood_burner(host: &mut dyn Host, pos: Pos, entity: &mut ModBlockEntity) {
     let mut burner = WoodBurner {
         power: power(host, pos),
@@ -217,14 +375,7 @@ fn tick_wood_burner(host: &mut dyn Host, pos: Pos, entity: &mut ModBlockEntity) 
     {
         stack.count -= 1;
         if stack.count == 0 {
-            // API gap: no item data in `Host`, so no `crafting_remainder`. Vanilla's one fuel with one.
-            let lava = &*stack.item == "minecraft:lava_bucket";
-            entity.items[FUEL_SLOT] = lava.then(|| ItemStack {
-                item: "minecraft:bucket".into(),
-                count: 1,
-                damage: 0,
-                extra: None,
-            });
+            entity.items[FUEL_SLOT] = remainder_of(&stack.item);
         }
     }
     set_power(host, pos, burner.power);
@@ -238,9 +389,55 @@ fn tick_wood_burner(host: &mut dyn Host, pos: Pos, entity: &mut ModBlockEntity) 
     entity.data = vec![burner.burn_time, burner.max_burn_time, 0, 0];
 }
 
-struct Rules<'a>(&'a dyn Host, &'a Mutex<RecipeCache<ItemStack>>);
+/// A machine's saved fields in its block entity's NBT.
+struct Fields<'a>(&'a mut Compound);
 
-impl ShredderRules<ItemStack> for Rules<'_> {
+impl Nbt for Fields<'_> {
+    fn int(&self, key: &str) -> i32 {
+        int(self.0, key)
+    }
+
+    fn set_int(&mut self, key: &str, value: i32) {
+        self.0.insert(key.into(), Tag::Int(value));
+    }
+}
+
+/// The machine at `pos` and its world, as `ntm_core`'s machines see them. Its power is read from
+/// `POWER` before the tick and written back after.
+struct World<'a> {
+    host: &'a dyn Host,
+    pos: Pos,
+    power: i64,
+    recipes: &'a Mutex<RecipeCaches<ItemStack>>,
+}
+
+impl World<'_> {
+    fn with_recipes<R>(&self, f: impl FnOnce(&mut RecipeCaches<ItemStack>) -> R) -> R {
+        f(&mut self.recipes.lock().unwrap_or_else(|e| e.into_inner()))
+    }
+
+    fn ingredient_fits(&self, json: &serde_json::Value, stack: &ItemStack) -> bool {
+        self.host
+            .recipe_ingredient(json)
+            .is_some_and(|ingredient| ingredient.test(stack))
+    }
+}
+
+impl BatterySlot<ItemStack> for World<'_> {
+    fn battery(&self, stack: &ItemStack) -> Option<Battery> {
+        pack_battery(stack)
+    }
+
+    fn set_charge(&self, stack: &mut ItemStack, charge: i64) {
+        set_pack_charge(stack, charge);
+    }
+}
+
+impl MachineWorld<ItemStack> for World<'_> {
+    fn id<'s>(&self, stack: &'s ItemStack) -> &'s str {
+        &stack.item
+    }
+
     fn same_item(&self, a: &ItemStack, b: &ItemStack) -> bool {
         a.item == b.item && a.damage == b.damage && a.extra == b.extra
     }
@@ -254,58 +451,114 @@ impl ShredderRules<ItemStack> for Rules<'_> {
     }
 
     fn max_stack(&self, stack: &ItemStack) -> u32 {
-        self.0.max_stack_size(&stack.item).unwrap_or(64)
+        self.host.max_stack_size(&stack.item).unwrap_or(64)
     }
 
-    fn blade_damage(&self, stack: &ItemStack) -> Option<(u32, u32)> {
-        // API gap: no item max damage in `Host`. The numbers ntm-content gives the blades.
-        let max = match stack.item.strip_prefix(BLADES_PREFIX)? {
-            "steel" => 200,
-            "titanium" => 350,
-            _ => 0,
+    fn damage(&self, stack: &ItemStack) -> (u32, u32) {
+        // API gap: no item max damage in `Host`. The numbers ntm-content gives blades and stamps.
+        let max = match stack.item.strip_prefix(machines::BLADES_PREFIX) {
+            Some("steel") => 200,
+            Some("titanium") => 350,
+            Some(_) => 0,
+            None => machines::press::stamp_durability(&stack.item),
         };
-        Some((stack.damage, max))
+        (stack.damage, max)
     }
 
     fn set_damage(&self, stack: &mut ItemStack, damage: u32) {
         stack.damage = damage;
     }
 
-    fn result(&self, stack: &ItemStack) -> Option<ItemStack> {
-        let host = self.0;
-        let mut results = self.1.lock().unwrap_or_else(|e| e.into_inner());
-        results.get(&stack.item, || {
-            host.recipes_of_type(SHREDDER_RECIPE)
-                .iter()
-                .find(|recipe| {
-                    host.recipe_ingredient(&recipe.json["ingredient"])
-                        .is_some_and(|ingredient| ingredient.test(stack))
+    fn power(&self) -> i64 {
+        self.power
+    }
+
+    fn set_power(&mut self, power: i64) {
+        self.power = power;
+    }
+
+    fn neighbor(&self, offset: [i32; 3]) -> String {
+        let [x, y, z] = self.pos;
+        self.host.block([x + offset[0], y + offset[1], z + offset[2]])
+    }
+
+    fn burn_time(&self, stack: &ItemStack) -> i32 {
+        base_burn_time(&stack.item)
+    }
+
+    fn remainder(&self, stack: &ItemStack) -> Option<ItemStack> {
+        remainder_of(&stack.item)
+    }
+
+    fn shredder_result(&self, stack: &ItemStack) -> Option<ItemStack> {
+        self.with_recipes(|recipes| {
+            recipes.shredder.get(&stack.item, || {
+                self.host
+                    .recipes_of_type(SHREDDER_RECIPE)
+                    .iter()
+                    .find(|recipe| self.ingredient_fits(&recipe.json["ingredient"], stack))
+                    .and_then(|recipe| self.host.recipe_result(&recipe.json["result"]))
+                    .or_else(|| self.host.recipe_result(&serde_json::json!({ "id": SCRAP })))
+            })
+        })
+    }
+
+    /// `BlastFurnaceRecipes.getRequiredCounts`: the recipe's inputs either way round.
+    fn blast_result(&self, a: &ItemStack, b: &ItemStack) -> Option<(u32, u32, ItemStack)> {
+        self.with_recipes(|recipes| {
+            recipes.blast.get(&format!("{}|{}", a.item, b.item), || {
+                self.host.recipes_of_type(BLAST_RECIPE).iter().find_map(|recipe| {
+                    let json = &recipe.json;
+                    let count = |key: &str| json[key].as_u64().map_or(1, |n| n as u32);
+                    let (need_a, need_b) = (count("input_a_count"), count("input_b_count"));
+                    let out = self.host.recipe_result(&json["result"])?;
+                    if self.ingredient_fits(&json["input_a"], a) && self.ingredient_fits(&json["input_b"], b) {
+                        Some((need_a, need_b, out))
+                    } else if self.ingredient_fits(&json["input_a"], b) && self.ingredient_fits(&json["input_b"], a) {
+                        Some((need_b, need_a, out))
+                    } else {
+                        None
+                    }
                 })
-                .and_then(|recipe| host.recipe_result(&recipe.json["result"]))
-                .or_else(|| host.recipe_result(&serde_json::json!({ "id": SCRAP })))
+            })
+        })
+    }
+
+    fn blast_fuel(&self, stack: &ItemStack) -> i32 {
+        self.with_recipes(|recipes| {
+            recipes.blast_fuel.get(&stack.item, || {
+                self.host
+                    .recipes_of_type(BLAST_FUEL)
+                    .iter()
+                    .find(|recipe| self.ingredient_fits(&recipe.json["ingredient"], stack))
+                    .and_then(|recipe| recipe.json["power"].as_i64())
+                    .map_or(0, |power| power as i32)
+            })
+        })
+    }
+
+    fn press_result(&self, stamp: &str, input: &ItemStack) -> Option<ItemStack> {
+        self.with_recipes(|recipes| {
+            recipes.press.get(&format!("{stamp}|{}", input.item), || {
+                self.host
+                    .recipes_of_type(PRESS_RECIPE)
+                    .iter()
+                    .find(|recipe| {
+                        recipe.json["stamp"].as_str() == Some(stamp)
+                            && self.ingredient_fits(&recipe.json["ingredient"], input)
+                    })
+                    .and_then(|recipe| self.host.recipe_result(&recipe.json["result"]))
+            })
         })
     }
 }
 
-fn tick_shredder(
-    host: &mut dyn Host,
-    pos: Pos,
-    entity: &mut ModBlockEntity,
-    results: &Mutex<RecipeCache<ItemStack>>,
-) {
-    let mut shredder = Shredder {
-        power: power(host, pos),
-        progress: int(&entity.nbt, "progress"),
-    };
-    let rules = Rules(&*host, results);
-    shredder.tick(&rules, &mut entity.items);
-    let left = Shredder::gear(&rules, entity.items[Shredder::LEFT_BLADE].as_ref());
-    let right = Shredder::gear(&rules, entity.items[Shredder::RIGHT_BLADE].as_ref());
-    set_power(host, pos, shredder.power);
-    entity
-        .nbt
-        .insert("progress".into(), Tag::Int(shredder.progress));
-    entity.data = vec![shredder.power as i32, shredder.progress, left, right];
+/// The screen of a block, if it is one of NTM's.
+fn screen_of(block: &str) -> Option<&'static Screen> {
+    match block {
+        SOCKET_BLOCK => Some(&SOCKET_SCREEN),
+        _ => machines::spec(block).map(|spec| spec.screen),
+    }
 }
 
 impl Hooks for NtmHooks {
@@ -403,20 +656,21 @@ impl Hooks for NtmHooks {
                 outputs: vec![],
                 menu: Some("minecraft:furnace".into()),
             }),
-            SHREDDER => {
-                let inputs: Vec<usize> = Shredder::INPUTS.collect();
-                let outputs: Vec<usize> = Shredder::OUTPUTS.collect();
-                Some(ModContainer {
-                    slots: Shredder::SLOTS,
-                    faces: std::array::from_fn(|_| {
-                        inputs.iter().chain(&outputs).copied().collect()
-                    }),
-                    inputs,
-                    outputs,
-                    menu: Some(SHREDDER_MENU.into()),
-                })
-            }
-            _ => None,
+            // NTM lets automation take a battery out once it is full or empty; here it only goes in.
+            SOCKET_BLOCK => Some(ModContainer {
+                slots: 1,
+                faces: std::array::from_fn(|_| vec![0]),
+                inputs: vec![0],
+                outputs: vec![],
+                menu: Some(SOCKET_MENU.into()),
+            }),
+            block => machines::spec(block).map(|spec| ModContainer {
+                slots: spec.slots.len(),
+                faces: std::array::from_fn(|_| spec.inputs.iter().chain(spec.outputs).copied().collect()),
+                inputs: spec.inputs.to_vec(),
+                outputs: spec.outputs.to_vec(),
+                menu: Some(spec.menu.into()),
+            }),
         }
     }
 
@@ -432,25 +686,67 @@ impl Hooks for NtmHooks {
                         .unwrap_or_else(|| space.create_node(vec![pos], around(pos)))
                 });
             });
-        } else if is_machine(&id) {
+            return;
+        }
+        if !is_machine(&id) {
+            return;
+        }
+        // API gap: no redstone signal in `Host` (`native_neighbor_signal`), so a socket keeps to
+        // its mode without a signal.
+        let mode = (id == SOCKET_BLOCK).then(|| socket_settings(&event.entity.nbt).mode(false));
+        let role = match id.as_str() {
+            WOOD_BURNER => Role::Provider,
+            _ => machines::spec(&id).map_or(Role::None, |spec| spec.role),
+        };
+        if mode.is_some() || role != Role::None {
             self.with_level(host.dimension(), |level| {
                 let Level { space, ports, .. } = level;
                 let port = ports
                     .entry(pos)
                     .or_insert_with(|| Port::new(vec![pos], around(pos)));
                 port.update(space, pos);
-                if id == WOOD_BURNER {
-                    port.check_provide(space, pos);
-                } else {
-                    port.check_subscribe(space, pos);
+                match (mode, role) {
+                    (Some(mode), _) => port.join(space, pos, mode.provides(), mode.receives()),
+                    (None, Role::Provider) => port.check_provide(space, pos),
+                    _ => port.check_subscribe(space, pos),
                 }
             });
-            if id == WOOD_BURNER {
-                tick_wood_burner(host, pos, event.entity);
-            } else {
-                tick_shredder(host, pos, event.entity, &self.shredder_results);
+        }
+        match mode {
+            Some(mode) => tick_socket(host, pos, event.entity, mode),
+            None if id == WOOD_BURNER => tick_wood_burner(host, pos, event.entity),
+            None => {
+                let entity = &mut *event.entity;
+                let power = if role == Role::None { 0 } else { power(host, pos) };
+                let mut world = World { host: &*host, pos, power, recipes: &self.recipes };
+                // The slots are lent out for the tick: the NBT is borrowed beside them.
+                let mut items = std::mem::take(&mut entity.items);
+                let data = machines::tick(&id, &mut world, &mut Fields(&mut entity.nbt), &mut items);
+                entity.items = items;
+                let power = world.power;
+                if let Some(data) = data {
+                    if role != Role::None {
+                        set_power(host, pos, power);
+                    }
+                    entity.data = data;
+                }
             }
         }
+    }
+
+    /// `TileEntityBatteryBase.receiveControl`: the socket's buttons, on the server.
+    fn menu_button(&self, _host: &mut dyn Host, event: &mut MenuButtonEvent<'_>) {
+        if event.entity.id != SOCKET_BLOCK {
+            return;
+        }
+        let mut settings = socket_settings(&event.entity.nbt);
+        if settings.press(event.id) {
+            put_socket_settings(&mut event.entity.nbt, settings);
+        }
+    }
+
+    fn screen_click(&self, _host: &dyn Host, event: &mut ScreenClickEvent<'_>) -> Option<i32> {
+        screen::click(screen_of(event.block)?, event.at)
     }
 
     /// `ItemPowerNetTool`: right click on a cable or machine for its network, plus what this
@@ -480,7 +776,10 @@ impl Hooks for NtmHooks {
                 None => vec!["Error: No network found!".to_owned()],
             }
         });
-        let max = max_power_of(&host.block(pos));
+        let max = match host.block(pos).as_str() {
+            SOCKET_BLOCK => STORAGE.get(host, Holder::BlockEntity(pos)).unwrap_or_default().max,
+            block => max_power_of(block),
+        };
         if max > 0 {
             lines.push(format!("Power: {} / {max} HE", power(host, pos)));
         }
@@ -491,106 +790,49 @@ impl Hooks for NtmHooks {
     }
 
     fn menu_slot_rules(&self, event: &mut MenuSlotRulesEvent<'_>) {
-        if event.menu == SHREDDER_MENU {
-            let blade = event.stack.item.starts_with(BLADES_PREFIX);
-            event.may_place = match event.slot {
-                0..=8 => !blade,
-                27 | 28 => blade,
-                _ => false,
-            };
+        if let Some(may_place) = machines::may_place(event.menu, event.slot, &event.stack.item) {
+            event.may_place = may_place;
         }
     }
 
     fn screen(&self, _host: &dyn Host, event: &mut ScreenEvent<'_>) -> Option<NativeScreen> {
-        if event.block != SHREDDER {
-            return None;
-        }
-        let grid = |x: f32, slot: usize| {
-            Some([
-                x + (slot % 3) as f32 * 18.0,
-                18.0 + (slot / 3) as f32 * 18.0,
-            ])
-        };
-        let mut slots: Vec<Option<[f32; 2]>> = (0..9).map(|slot| grid(44.0, slot)).collect();
-        slots.extend((0..18).map(|slot| grid(116.0, slot)));
-        slots.extend([Some([44.0, 108.0]), Some([80.0, 108.0]), Some([8.0, 108.0])]);
+        let s = screen_of(event.block)?;
         Some(NativeScreen {
-            width: 176.0,
-            height: 233.0,
-            slots,
-            inventory_x: 8.0,
-            inventory_y: 151.0,
+            width: s.size[0],
+            height: s.size[1],
+            slots: s.slots.to_vec(),
+            inventory_x: s.inventory[0],
+            inventory_y: s.inventory[1],
             own_labels: true,
             own_background: true,
         })
     }
 
-    /// `GUIMachineShredder.drawGuiContainerBackgroundLayer` and `drawGuiContainerForegroundLayer`.
+    /// The machine's GUI as its screen describes it: the pieces `ntm_core` works out, then the
+    /// labels.
     fn screen_draw(&self, host: &dyn Host, event: &mut ScreenDrawEvent<'_>) {
-        if event.block != SHREDDER {
-            return;
-        }
-        let [power, progress, left, right] = *event.data else {
+        let Some(s) = screen_of(event.block) else {
             return;
         };
         let origin = event.origin;
         let batch = &mut *event.batch;
-        let mut part = |src: [f32; 2], dst: [f32; 2], size: [f32; 2]| {
-            host.sprite(
-                batch,
-                SHREDDER_GUI,
-                [src[0], src[1], size[0], size[1]],
-                [origin[0] + dst[0], origin[1] + dst[1], size[0], size[1]],
-            );
-        };
-        part([0.0, 0.0], [0.0, 0.0], [176.0, 233.0]);
-        if power > 0 {
-            let height = (i64::from(power) * 88 / Shredder::MAX_POWER) as f32;
-            part([176.0, 160.0 - height], [8.0, 106.0 - height], [16.0, height]);
+        for blit in screen::blits(s, event.data) {
+            let d = blit.dst;
+            host.sprite(batch, s.texture, blit.src, [origin[0] + d[0], origin[1] + d[1], d[2], d[3]]);
         }
-        let width = (progress * 34 / Shredder::PROCESSING_SPEED) as f32;
-        part([176.0, 54.0], [63.0, 89.0], [width + 1.0, 18.0]);
-        for (gear, u, x) in [(left, 176.0, 43.0), (right, 194.0, 79.0)] {
-            if gear != 0 {
-                part([u, (gear - 1) as f32 * 18.0], [x, 71.0], [18.0, 18.0]);
-            }
-        }
-        // The title is centred over the panel right of the power bar, not over the whole screen.
-        const LABEL: u32 = 0x404040;
         if let Some(title) = host.screen_title() {
             // API gap: no text width in `Host`. Most of the font's glyphs are 6 pixels wide.
-            let x = 106.0 - title.chars().count() as f32 * 3.0;
-            host.text(batch, &title, [origin[0] + x, origin[1] + 6.0], LABEL, false);
+            let x = s.title.x - title.chars().count() as f32 * 3.0;
+            host.text(batch, &title, [origin[0] + x, origin[1] + s.title.y], s.title.color, false);
         }
         // API gap: no translation in `Host`.
-        host.text(
-            batch,
-            "Inventory",
-            [origin[0] + 8.0, origin[1] + 139.0],
-            LABEL,
-            false,
-        );
+        let [x, y] = s.inventory_label;
+        host.text(batch, "Inventory", [origin[0] + x, origin[1] + y], screen::DARK, false);
     }
 
     fn screen_tooltip(&self, _host: &dyn Host, event: &mut ScreenTooltipEvent<'_>) {
-        if event.block != SHREDDER {
-            return;
-        }
-        let [power, _, left, right] = *event.data else {
-            return;
-        };
-        let at = event.at;
-        if (8.0..24.0).contains(&at[0]) && (18.0..106.0).contains(&at[1]) {
-            event
-                .lines
-                .push(format!("{power}/{} HE", Shredder::MAX_POWER));
-        } else if (43.0..97.0).contains(&at[0])
-            && (71.0..89.0).contains(&at[1])
-            && [left, right].iter().any(|gear| matches!(gear, 0 | 3))
-        {
-            event
-                .lines
-                .push("Error: Shredder blades are broken or missing!".to_owned());
+        if let Some(s) = screen_of(event.block) {
+            event.lines.extend(screen::tooltip(s, event.data, event.at));
         }
     }
 }

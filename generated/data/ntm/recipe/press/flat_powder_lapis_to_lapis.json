@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:dusts/lapis",
+  "stamp": "flat",
+  "result": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}

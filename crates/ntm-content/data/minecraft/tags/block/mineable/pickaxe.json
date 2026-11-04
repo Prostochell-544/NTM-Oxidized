@@ -8,6 +8,10 @@
     "ntm:ore_deepslate_tungsten",
     "ntm:red_cable",
     "ntm:machine_wood_burner",
-    "ntm:machine_shredder"
+    "ntm:machine_shredder",
+    "ntm:machine_battery_socket",
+    "ntm:machine_difurnace_off",
+    "ntm:machine_difurnace_ext",
+    "ntm:machine_press"
   ]
 }

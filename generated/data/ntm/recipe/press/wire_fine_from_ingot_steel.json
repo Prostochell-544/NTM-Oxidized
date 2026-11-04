@@ -1,0 +1,9 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/steel",
+  "stamp": "wire",
+  "result": {
+    "id": "ntm:wire_steel",
+    "count": 8
+  }
+}

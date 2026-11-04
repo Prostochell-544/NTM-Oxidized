@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "C": "ntm:coil_copper",
+    "F": "minecraft:furnace",
+    "I": "#c:ingots/iron",
+    "P": "#c:plates/steel"
+  },
+  "pattern": [
+    "PPP",
+    "CFC",
+    "I I"
+  ],
+  "result": {
+    "id": "ntm:machine_wood_burner"
+  },
+  "type": "minecraft:crafting_shaped"
+}

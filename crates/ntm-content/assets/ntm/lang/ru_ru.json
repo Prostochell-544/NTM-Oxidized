@@ -1,0 +1,18 @@
+{
+  "block.ntm.machine_battery_socket": "Аккумуляторный разъем",
+  "item.ntm.battery_pack_battery_redstone": "Редстоуновый аккумулятор",
+  "item.ntm.battery_pack_battery_lead": "Свинцово-кислотный аккумулятор",
+  "item.ntm.battery_pack_battery_lithium": "Литий-ионный аккумулятор",
+  "item.ntm.battery_pack_battery_sodium": "Натриево-железный аккумулятор",
+  "item.ntm.battery_pack_battery_schrabidium": "Шрабидиевый аккумулятор",
+  "item.ntm.battery_pack_battery_quantum": "Квантовый аккумулятор",
+  "item.ntm.battery_pack_capacitor_copper": "Медный конденсатор",
+  "item.ntm.battery_pack_capacitor_gold": "Золотой конденсатор",
+  "item.ntm.battery_pack_capacitor_niobium": "Ниобиевый конденсатор",
+  "item.ntm.battery_pack_capacitor_tantalum": "Танталовый конденсатор",
+  "item.ntm.battery_pack_capacitor_bismuth": "Висмутовый конденсатор",
+  "item.ntm.battery_pack_capacitor_spark": "Спарк-конденсатор",
+  "block.ntm.machine_difurnace_off": "Доменная печь",
+  "block.ntm.machine_difurnace_ext": "Расширитель доменной печи",
+  "block.ntm.machine_press": "Пресс"
+}

@@ -110,6 +110,24 @@ pub enum Priority {
     Highest,
 }
 
+impl Priority {
+    /// `ConnectionPriority.ordinal()`, as NTM saves it.
+    pub fn ordinal(self) -> i32 {
+        self as i32
+    }
+
+    /// `EnumUtil.grabEnumSafely`: an ordinal out of range is the first one.
+    pub fn from_ordinal(ordinal: i32) -> Priority {
+        match ordinal {
+            1 => Priority::Low,
+            2 => Priority::Normal,
+            3 => Priority::High,
+            4 => Priority::Highest,
+            _ => Priority::Lowest,
+        }
+    }
+}
+
 const PRIORITIES: usize = 5;
 
 /// `IEnergyHandlerMK2`, `IEnergyReceiverMK2` and `IEnergyProviderMK2`, for whatever `H` names.
@@ -353,8 +371,18 @@ impl<H: Copy + Ord> Nodespace<H> {
     }
 
     pub fn remove_handler(&mut self, net: NetId, handler: H) {
+        self.remove_receiver(net, handler);
+        self.remove_provider(net, handler);
+    }
+
+    pub fn remove_receiver(&mut self, net: NetId, handler: H) {
         if let Some(net) = self.nets.get_mut(&net) {
             net.receivers.remove(&handler);
+        }
+    }
+
+    pub fn remove_provider(&mut self, net: NetId, handler: H) {
+        if let Some(net) = self.nets.get_mut(&net) {
             net.providers.remove(&handler);
         }
     }
@@ -551,6 +579,24 @@ impl Port {
             && let Some(net) = self.net(space)
         {
             space.add_provider(net, owner);
+        }
+    }
+
+    /// `TileEntityBatteryBase.updateEntity`: a storage block's node is a conductor like a cable's,
+    /// and every tick the block is on its network as a provider, a receiver, both or neither.
+    pub fn join<H: Copy + Ord>(&self, space: &mut Nodespace<H>, owner: H, provide: bool, receive: bool) {
+        let Some(net) = self.net(space) else {
+            return;
+        };
+        if provide {
+            space.add_provider(net, owner);
+        } else {
+            space.remove_provider(net, owner);
+        }
+        if receive {
+            space.add_receiver(net, owner);
+        } else {
+            space.remove_receiver(net, owner);
         }
     }
 }
@@ -1030,6 +1076,34 @@ mod tests {
             line.tick();
         }
         assert_eq!(line.world.power(2), 100);
+    }
+
+    #[test]
+    fn a_storage_block_takes_as_input_and_gives_as_output() {
+        // A generator, a storage block and a full machine in a row, ports touching.
+        let mut storage = machine(0, 10_000);
+        (storage.receiver_speed, storage.provider_speed, storage.priority) = (300, 200, Priority::Low);
+        let mut w = world(&[(1, machine(1_000, 1_000)), (2, storage), (3, machine(1_000, 1_000))]);
+        let mut space = Nodespace::default();
+        let mut ports: Vec<Port> = (0..3).map(|x| Port::new(vec![[x, 0, 0]], around([x, 0, 0]))).collect();
+        let mut tick = |space: &mut Nodespace<u32>, w: &mut World, provide, receive| {
+            for (h, port) in (1..).zip(ports.iter_mut()) {
+                port.update(space, h);
+            }
+            ports[0].check_provide(space, 1);
+            ports[1].join(space, 2, provide, receive);
+            ports[2].check_subscribe(space, 3);
+            space.update(w, &mut no_rng);
+        };
+        for _ in 0..3 {
+            tick(&mut space, &mut w, false, true);
+        }
+        assert_eq!((w.power(1), w.power(2)), (400, 600));
+
+        w.set_power(1, 0);
+        w.set_power(3, 0);
+        tick(&mut space, &mut w, true, false);
+        assert_eq!((w.power(2), w.power(3)), (400, 200));
     }
 
     #[test]

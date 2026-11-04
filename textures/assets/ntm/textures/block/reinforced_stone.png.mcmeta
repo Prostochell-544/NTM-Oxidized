@@ -3,7 +3,7 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/reinforced_stone_ctm"
+			"ntm:block/reinforced_stone_ctm"
 		]
 	}
 }

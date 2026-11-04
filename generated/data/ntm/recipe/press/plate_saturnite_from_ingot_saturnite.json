@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/saturnite",
+  "stamp": "plate",
+  "result": {
+    "id": "ntm:plate_saturnite"
+  }
+}

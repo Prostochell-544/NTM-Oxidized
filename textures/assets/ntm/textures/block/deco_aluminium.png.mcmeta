@@ -3,7 +3,7 @@
 		"ctm_version": 1,
 		"type": "CTM",
 		"textures": [
-			"reinhardtshbm:block/deco_aluminium_ctm"
+			"ntm:block/deco_aluminium_ctm"
 		]
 	}
 }

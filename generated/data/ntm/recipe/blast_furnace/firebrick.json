@@ -1,0 +1,10 @@
+{
+  "type": "ntm:blast_furnace",
+  "input_a": "#c:dusts/aluminium",
+  "input_b": "minecraft:clay_ball",
+  "input_b_count": 7,
+  "result": {
+    "id": "ntm:ingot_firebrick",
+    "count": 8
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:dusts/diamond",
+  "stamp": "flat",
+  "result": {
+    "id": "minecraft:diamond"
+  }
+}

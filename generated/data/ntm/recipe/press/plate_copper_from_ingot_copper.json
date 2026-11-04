@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/copper",
+  "stamp": "plate",
+  "result": {
+    "id": "ntm:plate_copper"
+  }
+}

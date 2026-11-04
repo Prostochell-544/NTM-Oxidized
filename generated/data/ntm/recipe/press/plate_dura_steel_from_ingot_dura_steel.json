@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:ingots/dura_steel",
+  "stamp": "plate",
+  "result": {
+    "id": "ntm:plate_dura_steel"
+  }
+}

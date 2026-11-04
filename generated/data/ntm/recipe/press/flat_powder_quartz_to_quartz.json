@@ -1,0 +1,8 @@
+{
+  "type": "ntm:press",
+  "ingredient": "#c:dusts/quartz",
+  "stamp": "flat",
+  "result": {
+    "id": "minecraft:quartz"
+  }
+}

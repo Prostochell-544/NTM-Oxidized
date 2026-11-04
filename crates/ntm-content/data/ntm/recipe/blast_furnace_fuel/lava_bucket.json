@@ -1,0 +1,5 @@
+{
+  "type": "ntm:blast_furnace_fuel",
+  "ingredient": "minecraft:lava_bucket",
+  "power": 12800
+}
